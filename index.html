@@ -47,8 +47,9 @@
                 <a href="#topics" class="nav-link">Topics</a>
                 <a href="#audience" class="nav-link">Audience</a>
                 <a href="#format" class="nav-link">Programme Outline</a>
-                <a href="#partners" class="nav-link">Organizers</a>
+                <a href="#speakers" class="nav-link">Speakers</a>
                 <a href="#venue" class="nav-link">Venue</a>
+                <a href="#partners" class="nav-link">Organizers</a>
                 <a href="#contact" class="nav-link">Contact Us</a>
             </div>
         </nav>
@@ -83,7 +84,7 @@
                         <h3>AI in Higher Education</h3>
                     </div>
                     <div class="topic-card">
-                        <h3>AI and Law</h3>
+                        <h3>AI and Democracy</h3>
                     </div>
                     <div class="topic-card">
                         <h3>AI in Healthcare</h3>
@@ -104,9 +105,6 @@
                         <h3>AI and Cybersecurity</h3>
                     </div>
                     <div class="topic-card">
-                        <h3>Ethics of AI</h3>
-                    </div>
-                    <div class="topic-card">
                         <h3>AI and Climate</h3>
                     </div>
                     <div class="topic-card">
@@ -115,8 +113,6 @@
                 </div>
             </div>
         </section>
-
-
 
         <!-- Audience Section -->
         <section id="audience" class="section">
@@ -138,45 +134,43 @@
             </div>
         </section>
 
+
         <!-- Conference Format Section -->
         <section id="format" class="section format-section">
             <div class="container">
                 <h2>Programme Outline</h2>
-                <div class="format-grid">
-                    <div class="format-card">
-                        <h3>5 November 2025</h3>
-                        <p>08:30-09:00 Registration</p>
-                        <p>09:00-17:45 Conference</p>
-                    </div>
-                    <div class="format-card">
-                        <h3>6 November 2025</h3>
-                        <p>08:30-09:00 Registration</p>
-                        <p>09:00-17:45 Conference</p>
-                    </div>
-                    <div class="format-card">
-                        <h3>7 November 2025</h3>
-                        <p>08:30-09:00 Registration</p>
-                        <p>09:00-17:45 Conference</p>
-                    </div>
-                </div>
+                <!-- Programme outline content is injected below by JS from programme.js -->
+                <div class="programme-grid"></div>
             </div>
         </section>
 
 
-        <!-- Partners Section -->
-        <section id="partners" class="section">
+
+        <!-- Speakers Section -->
+        <section id="speakers" class="section speakers-section">
             <div class="container">
-                <h2>Organizers</h2>
-                <div class="logo-scroller" role="list" aria-label="Partner logos">
-                    <div class="logo-item" role="listitem">
-                        <img src="images/cyprusacademylogo.png" alt="Cyprus Academy of Sciences, Letters and Arts" loading="lazy">
-                    </div>
-                    <div class="logo-item" role="listitem">
-                        <img src="images/kioslogo.png" alt="KIOS Research and Innovation Center of Excellence" loading="lazy">
-                    </div>
+                <h2>Speakers</h2>
+                <div class="speakers-grid">
+                    <!-- Speaker cards will be injected here -->
+                </div>
+            </div>
+            <!-- Speaker Modal (single, reused for all) -->
+            <div id="speaker-modal" class="speaker-modal" aria-modal="true" role="dialog" tabindex="-1" style="display:none;">
+                <div class="speaker-modal-content">
+                    <button class="speaker-modal-close" aria-label="Close CV">&times;</button>
+                    <h3 id="modal-speaker-name">Speaker Name</h3>
+                    <p id="modal-speaker-cv">Speaker CV will appear here. This is placeholder text for the speaker's curriculum vitae. Replace with real content.</p>
                 </div>
             </div>
         </section>
+        <!-- End Speakers Section -->
+
+
+
+
+
+
+
 
 
 
@@ -203,6 +197,22 @@
 
 
 
+        <!-- Partners Section -->
+        <section id="partners" class="section">
+            <div class="container">
+                <h2>Organizers</h2>
+                <div class="logo-scroller" role="list" aria-label="Partner logos">
+                    <div class="logo-item" role="listitem">
+                        <img src="images/cyprusacademylogo.png" alt="Cyprus Academy of Sciences, Letters and Arts" loading="lazy">
+                    </div>
+                    <div class="logo-item" role="listitem">
+                        <img src="images/kioslogo.png" alt="KIOS Research and Innovation Center of Excellence" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
         <!-- Contact Section -->
         <section id="contact" class="section">
             <div class="container">
@@ -222,6 +232,8 @@
         </footer>
     </main>
 
+    <script src="speakers.js"></script>
+    <script src="programme.js"></script>
     <script src="script.js"></script>
 </body>
 
