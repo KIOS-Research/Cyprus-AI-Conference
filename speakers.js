@@ -62,8 +62,29 @@ window.speakers = [{
         role: "Panelist",
         topic: "AI in Higher Education",
         cv: "Michael Sailer is full professor for Learning Analytics and Educational Data Mining at University of Augsburg, Germany. Further he is academic director of the center of technology-enhanced learning and teaching at the University of Augsburg, Germany, and acts as Special Issue Editor for the journal “Learning and Individual Differences”. His research focuses on technology-enhanced learning and teaching. Specifically, the analyses of learning processes in digital learning environments and AI in education."
+    },
+    {
+        name: "Andreas Demetriou",
+        photo: "biophotos/andreas-demetriou.jpg",
+        capacity: "Chief Information Officer, Alphamega Hypermarkets",
+        role: "Panelist",
+        topic: "AI in Cybersecurity",
+        cv: "Andreas Demetriou is the Chief Information Officer at Alphamega Hypermarkets, where he drives the company’s Technology Strategy, Digital Transformation, and AI initiatives. He leads the AI Coordination Team and serves on the AI Steering Committee, playing a key role in shaping the organization’s future through intelligent systems and data-driven innovation. Under his leadership, Alphamega was recognized by IDG as one of the 100 Most Innovative Companies of 2020, thanks to its pioneering technology solutions. Andreas holds a BSc in Computer Science from the University of Crete and an MSc in Information Systems from the University of Surrey. He is also a certified GDPR Data Protection Officer, a Lead ISO 27001 Implementer (PECB), and a PM² Project Management certified professional."
+    },
+    {
+        name: "Michail Bletsas",
+        photo: "biophotos/michael-bletsas.jpg",
+        capacity: "Governor, National Cybersecurity Authority of Greece, Director of Computing, MIT Media Lab",
+        role: "Panelist",
+        topic: "AI in Cybersecurity",
+        cv: "Michail Bletsas has served as Governor of the National Cybersecurity Authority since April 2024, actively contributing to the development of the national cybersecurity strategy. He is a Research Scientist and Director of Computing at the MIT Media Lab, where he has worked since 1996, overseeing the production, transmission, consumption, and storage of data. He was a core member of the technical and design team of the “One Laptop per Child” (OLPC) initiative, which created the pioneering and award-winning “XO” laptop. He is frequently invited as a keynote speaker at international conferences and public forums.  His research interests include network security, countering the systematic spread of disinformation, wireless networks, and the development of high- performance computing infrastructures for machine learning. In recent years, he has been extensively engaged in consulting on technology and technology policy.  He holds a Diploma in Electrical Engineering from the Aristotle University of Thessaloniki and a master’s degree in Computer Engineering from Boston University"
+    },
+    {
+        name: "Angelos K. Marnerides",
+        photo: "biophotos/angelos-marnerides.jpeg",
+        capacity: "Asst. Professor, University of Cyprus",
+        role: "Session Chair",
+        topic: "AI in Cybersecurity",
+        cv: "Angelos K. Marnerides is an Asst. Professor of Cyber Physical Systems Security in the Department of Electrical and Computer Engineering (ECE) and a Faculty Member at the KIOS Research and Innovation Centre of Excellence at the University of Cyprus. He holds a BSc (Honours, 2006) from Middlesex University and an MSc with Distinction (2007) as well as a PhD (2011) in Computer Science from Lancaster University. He has also held research positions at Carnegie Mellon University, University College London, University of Porto, and Lancaster University. Before joining UCY, he was a tenured Associate Professor at University of Glasgow, where he led the Glasgow Cyber Defense group. He has published 80+ publications in top-tier IEEE/ACM conferences with research focusing on secure and resilient system design with strong theoretical underpinnings and practical, data-driven implementations. He is currently the coordinator of the €5.8M COCOON project funded by Horizon Europe — the first EU Innovation Action project coordinated by UCY KIOS — and the €6.4M EU Horizon FOCAL project. He also serves as the national representative in the European Telecommunications Standards Institute (ETSI) Working Group for the Cyber Resilience Act. Angelos is a Senior Member of Institute of Electrical and Electronics Engineers (IEEE)."
     }
-
-
-
 ];
