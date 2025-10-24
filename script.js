@@ -200,10 +200,12 @@ window.addEventListener('resize', function() {
         const modalCV = document.getElementById('modal-speaker-cv');
         const closeBtn = document.querySelector('.speaker-modal-close');
         const grid = document.querySelector('.speakers-grid');
+        const filterButtons = document.querySelectorAll('.filter-btn');
 
         function createSpeakerCard(speaker, idx) {
             const card = document.createElement('div');
             card.className = 'speaker-card';
+            card.setAttribute('data-topic', speaker.topic);
             card.innerHTML = `
             <button class="speaker-photo-btn" data-speaker="${idx + 1}" aria-label="View CV">
                 <img src="${speaker.photo}" alt="Speaker Photo" class="speaker-photo" onerror="this.onerror=null;this.src='biophotos/placeholder.png'" />
@@ -229,7 +231,40 @@ window.addEventListener('resize', function() {
             grid.appendChild(createSpeakerCard(spk, idx));
         });
     }
+
+    function filterSpeakers(topic) {
+        const speakerCards = document.querySelectorAll('.speaker-card');
+        speakerCards.forEach(card => {
+            if (topic === 'all' || card.getAttribute('data-topic') === topic) {
+                card.style.display = 'flex';
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                // Trigger animation
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 50);
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+
+    // Initialize speakers
     populateSpeakersGrid(speakers);
+
+    // Add filter button event listeners
+    filterButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+            // Remove active class from all buttons
+            filterButtons.forEach(b => b.classList.remove('active'));
+            // Add active class to clicked button
+            this.classList.add('active');
+            // Filter speakers
+            const filter = this.getAttribute('data-filter');
+            filterSpeakers(filter);
+        });
+    });
     // Open modal on photo click
     document.addEventListener('click', function(e) {
         const btn = e.target.closest('.speaker-photo-btn');
