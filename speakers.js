@@ -105,11 +105,11 @@ window.speakers = [{
     },
     {
         name: "Tatiana Eleni Synodinou",
-        photo: "biophotos/",
+        photo: "biophotos/tatiana-synodinou.jpg",
         capacity: "Vice-Rector for Academic Affairs, University of Cyprus",
         role: "Panelist",
         topic: "AI in Higher Education",
-        cv: ""
+        cv: "Tatiana Eleni Synodinou is the Vice-Rector for Academic Affairs at the University of Cyprus, where she chairs the Ad hoc Committee for Artificial Intelligence, shaping policy for AI use in education and research. She is Professor of Private and Commercial Law with expertise in copyright law, media/Internet law and law of new technologies and the holder of the Jean Monnet Centre of Excellence Chair DIGIU (Digital Platforms: Under the Scope of the New Era in Digital Services). She is also Chairperson of Cyprus’s Union of Copyright Law (EDPI) and member of the European Copyright Society."
     },
     {
         name: "Sorin Hermon",
@@ -193,7 +193,7 @@ window.speakers = [{
     },
     {
         name: "Christos Panayiotou",
-        photo: "biophotos/christos-panayiotou",
+        photo: "biophotos/christos-panayiotou.jpg",
         capacity: "Professor, Department of Electrical and Computer Engineering, University of Cyprus",
         role: "Session Chair",
         topic: "AI in Critical Infrastructures",
@@ -211,6 +211,22 @@ window.speakers = [{
         name: "Socrates Metaxas",
         photo: "biophotos/",
         capacity: "Managing Director, Limassol District Local Government Organization",
+        role: "Panelist",
+        topic: "AI in Critical Infrastructures",
+        cv: ""
+    },
+    {
+        name: "Andreas Stavrou",
+        photo: "biophotos/",
+        capacity: "Assistant Manager, Electricity Authority of Cyprus Transmission System Owner Department",
+        role: "Panelist",
+        topic: "AI in Critical Infrastructures",
+        cv: ""
+    },
+    {
+        name: "Michael Chatzipanagiotis",
+        photo: "biophotos/",
+        capacity: "Assistant Professor, Department of Law, University of Cyprus ",
         role: "Panelist",
         topic: "AI in Critical Infrastructures",
         cv: ""
