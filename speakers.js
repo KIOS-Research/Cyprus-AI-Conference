@@ -1,6 +1,6 @@
 window.speakers = [{
         name: "Tasos S. Anastasiou",
-        photo: "biophotos/tasos-anastasiou.jpg",
+        photo: "biophotos/tasos-anastasiou2.jpg",
         capacity: "Chairman of the Council, University of Cyprus",
         role: "Session Chair",
         topic: "AI in Industry and Innovation",
@@ -73,7 +73,7 @@ window.speakers = [{
     },
     {
         name: "Michail Bletsas",
-        photo: "biophotos/michael-bletsas.jpg",
+        photo: "biophotos/michael-bletsas2.jpg",
         capacity: "Governor, National Cybersecurity Authority of Greece, Director of Computing, MIT Media Lab",
         role: "Panelist",
         topic: "AI in Cybersecurity",
