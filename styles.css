@@ -65,8 +65,43 @@ p {
     padding: 4rem 0;
 }
 
-.section:nth-child(even) {
+
+/* Alternating background colors for sections */
+
+#about {
+    background-color: #fff8f7;
+}
+
+#topics {
     background-color: #f3f0fa;
+}
+
+#audience {
+    background-color: #fff8f7;
+}
+
+#format {
+    background-color: #f3f0fa;
+}
+
+#registration {
+    background-color: #fff8f7;
+}
+
+#speakers {
+    background-color: #f3f0fa;
+}
+
+#venue {
+    background-color: #fff8f7;
+}
+
+#partners {
+    background-color: #f3f0fa;
+}
+
+#contact {
+    background-color: #fff8f7;
 }
 
 
@@ -162,7 +197,7 @@ p {
     color: #451dcc;
     text-decoration: none;
     font-weight: 500;
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 0.8rem;
     border-radius: 0.5rem;
     transition: all 0.3s ease;
 }
@@ -211,10 +246,6 @@ p {
 
 
 /* Topics Section */
-
-.topics-section {
-    background: linear-gradient(135deg, #f3f0fa 0%, #fff8f7 100%);
-}
 
 .topics-grid {
     display: grid;
@@ -287,10 +318,6 @@ p {
 
 
 /* Format Section */
-
-.format-section {
-    background: linear-gradient(135deg, #ff928b11 0%, #fff8f7 100%);
-}
 
 .format-grid {
     display: grid;
@@ -410,6 +437,40 @@ p {
 .ics-actions {
     display: flex;
     gap: 0.75rem;
+}
+
+
+/* Registration Actions */
+
+.registration-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.registration-actions .btn {
+    font-size: 1.25rem;
+    padding: 1rem 2rem;
+    min-width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(255, 146, 139, 0.3);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.registration-actions .btn:hover {
+    box-shadow: 0 6px 20px rgba(255, 146, 139, 0.4);
+    transform: translateY(-3px);
+}
+
+.registration-actions .btn-outline {
+    box-shadow: 0 4px 12px rgba(69, 29, 204, 0.2);
+}
+
+.registration-actions .btn-outline:hover {
+    box-shadow: 0 6px 20px rgba(69, 29, 204, 0.3);
 }
 
 
@@ -581,10 +642,6 @@ p {
 
 
 /* Speakers Section */
-
-.speakers-section {
-    background: linear-gradient(135deg, #fff8f7 0%, #f3f0fa 100%);
-}
 
 .speakers-grid {
     display: grid;

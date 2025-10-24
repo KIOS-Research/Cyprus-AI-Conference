@@ -1,0 +1,433 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ical.marudot.com//iCal Event Maker
+CALSCALE:GREGORIAN
+BEGIN:VTIMEZONE
+TZID:Asia/Nicosia
+LAST-MODIFIED:20240422T053450Z
+TZURL:https://www.tzurl.org/zoneinfo-outlook/Asia/Nicosia
+X-LIC-LOCATION:Asia/Nicosia
+BEGIN:STANDARD
+TZNAME:EET
+TZOFFSETFROM:+0300
+TZOFFSETTO:+0200
+DTSTART:19701025T040000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+BEGIN:DAYLIGHT
+TZNAME:EEST
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0300
+DTSTART:19700329T030000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20251024T124435Z
+UID:cyprusai-20251105T083000-registration@cyprusai.cy
+DTSTART;TZID=Asia/Nicosia:20251105T083000
+DTEND;TZID=Asia/Nicosia:20251105T090000
+SUMMARY:Registration
+URL:https://cyprusai.cy
+DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
+LOCATION:University of Cyprus (Leventis Building, Room B108)
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Registration
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTAMP:20251024T124435Z
+UID:cyprusai-20251105T090000-welcomeremarks@cyprusai.cy
+DTSTART;TZID=Asia/Nicosia:20251105T090000
+DTEND;TZID=Asia/Nicosia:20251105T093000
+SUMMARY:Welcome Remarks
+URL:https://cyprusai.cy
+DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
+LOCATION:University of Cyprus (Leventis Building, Room B108)
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Welcome Remarks
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTAMP:20251024T124435Z
+UID:cyprusai-20251105T093000-emergingresearchinai@cyprusai.cy
+DTSTART;TZID=Asia/Nicosia:20251105T093000
+DTEND;TZID=Asia/Nicosia:20251105T110000
+SUMMARY:Emerging Research in AI
+URL:https://cyprusai.cy
+DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
+LOCATION:University of Cyprus (Leventis Building, Room B108)
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Emerging Research in AI
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTAMP:20251024T124435Z
+UID:cyprusai-20251105T110000-coffeebreak@cyprusai.cy
+DTSTART;TZID=Asia/Nicosia:20251105T110000
+DTEND;TZID=Asia/Nicosia:20251105T113000
+SUMMARY:Coffee Break
+URL:https://cyprusai.cy
+DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
+LOCATION:University of Cyprus (Leventis Building, Room B108)
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Coffee Break
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTAMP:20251024T124435Z
+UID:cyprusai-20251105T113000-aiinhealthcare@cyprusai.cy
+DTSTART;TZID=Asia/Nicosia:20251105T113000
+DTEND;TZID=Asia/Nicosia:20251105T130000
+SUMMARY:AI in Healthcare
+URL:https://cyprusai.cy
+DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
+LOCATION:University of Cyprus (Leventis Building, Room B108)
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:AI in Healthcare
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTAMP:20251024T124435Z
+UID:cyprusai-20251105T130000-networkinglunch@cyprusai.cy
+DTSTART;TZID=Asia/Nicosia:20251105T130000
+DTEND;TZID=Asia/Nicosia:20251105T140000
+SUMMARY:Networking Lunch
+URL:https://cyprusai.cy
+DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
+LOCATION:University of Cyprus (Leventis Building, Room B108)
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Networking Lunch
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTAMP:20251024T124435Z
+UID:cyprusai-20251105T140000-keynotetalk@cyprusai.cy
+DTSTART;TZID=Asia/Nicosia:20251105T140000
+DTEND;TZID=Asia/Nicosia:20251105T150000
+SUMMARY:Keynote Talk
+URL:https://cyprusai.cy
+DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
+LOCATION:University of Cyprus (Leventis Building, Room B108)
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Keynote Talk
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTAMP:20251024T124435Z
+UID:cyprusai-20251105T150000-coffeebreak@cyprusai.cy
+DTSTART;TZID=Asia/Nicosia:20251105T150000
+DTEND;TZID=Asia/Nicosia:20251105T151500
+SUMMARY:Coffee Break
+URL:https://cyprusai.cy
+DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
+LOCATION:University of Cyprus (Leventis Building, Room B108)
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Coffee Break
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTAMP:20251024T124435Z
+UID:cyprusai-20251105T151500-aiandcybersecurity@cyprusai.cy
+DTSTART;TZID=Asia/Nicosia:20251105T151500
+DTEND;TZID=Asia/Nicosia:20251105T164500
+SUMMARY:AI and Cybersecurity
+URL:https://cyprusai.cy
+DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
+LOCATION:University of Cyprus (Leventis Building, Room B108)
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:AI and Cybersecurity
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTAMP:20251024T124435Z
+UID:cyprusai-20251106T083000-registration@cyprusai.cy
+DTSTART;TZID=Asia/Nicosia:20251106T083000
+DTEND;TZID=Asia/Nicosia:20251106T090000
+SUMMARY:Registration
+URL:https://cyprusai.cy
+DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
+LOCATION:University of Cyprus (Leventis Building, Room B108)
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Registration
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTAMP:20251024T124435Z
+UID:cyprusai-20251106T090000-keynotetalk@cyprusai.cy
+DTSTART;TZID=Asia/Nicosia:20251106T090000
+DTEND;TZID=Asia/Nicosia:20251106T100000
+SUMMARY:Keynote Talk
+URL:https://cyprusai.cy
+DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
+LOCATION:University of Cyprus (Leventis Building, Room B108)
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Keynote Talk
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTAMP:20251024T124435Z
+UID:cyprusai-20251106T100000-aiandchallengestodemocracy@cyprusai.cy
+DTSTART;TZID=Asia/Nicosia:20251106T100000
+DTEND;TZID=Asia/Nicosia:20251106T113000
+SUMMARY:AI and Challenges to Democracy
+URL:https://cyprusai.cy
+DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
+LOCATION:University of Cyprus (Leventis Building, Room B108)
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:AI and Challenges to Democracy
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTAMP:20251024T124435Z
+UID:cyprusai-20251106T113000-coffeebreak@cyprusai.cy
+DTSTART;TZID=Asia/Nicosia:20251106T113000
+DTEND;TZID=Asia/Nicosia:20251106T120000
+SUMMARY:Coffee Break
+URL:https://cyprusai.cy
+DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
+LOCATION:University of Cyprus (Leventis Building, Room B108)
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Coffee Break
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTAMP:20251024T124435Z
+UID:cyprusai-20251106T120000-aiincriticalinfrastructures@cyprusai.cy
+DTSTART;TZID=Asia/Nicosia:20251106T120000
+DTEND;TZID=Asia/Nicosia:20251106T133000
+SUMMARY:AI in Critical Infrastructures
+URL:https://cyprusai.cy
+DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
+LOCATION:University of Cyprus (Leventis Building, Room B108)
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:AI in Critical Infrastructures
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTAMP:20251024T124435Z
+UID:cyprusai-20251106T133000-networkinglunch@cyprusai.cy
+DTSTART;TZID=Asia/Nicosia:20251106T133000
+DTEND;TZID=Asia/Nicosia:20251106T143000
+SUMMARY:Networking Lunch
+URL:https://cyprusai.cy
+DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
+LOCATION:University of Cyprus (Leventis Building, Room B108)
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Networking Lunch
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTAMP:20251024T124435Z
+UID:cyprusai-20251106T143000-aiinindustryandinnovation@cyprusai.cy
+DTSTART;TZID=Asia/Nicosia:20251106T143000
+DTEND;TZID=Asia/Nicosia:20251106T160000
+SUMMARY:AI in Industry and Innovation
+URL:https://cyprusai.cy
+DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
+LOCATION:University of Cyprus (Leventis Building, Room B108)
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:AI in Industry and Innovation
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTAMP:20251024T124435Z
+UID:cyprusai-20251106T160000-workshopaiservices@cyprusai.cy
+DTSTART;TZID=Asia/Nicosia:20251106T160000
+DTEND;TZID=Asia/Nicosia:20251106T170000
+SUMMARY:Workshop: AI Services
+URL:https://cyprusai.cy
+DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
+LOCATION:University of Cyprus (Leventis Building, Room B108)
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Workshop: AI Services
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTAMP:20251024T124435Z
+UID:cyprusai-20251107T083000-registration@cyprusai.cy
+DTSTART;TZID=Asia/Nicosia:20251107T083000
+DTEND;TZID=Asia/Nicosia:20251107T090000
+SUMMARY:Registration
+URL:https://cyprusai.cy
+DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
+LOCATION:University of Cyprus (Leventis Building, Room B108)
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Registration
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTAMP:20251024T124435Z
+UID:cyprusai-20251107T090000-keynotetalkaiandclimatebydr.elenaxoplaki@cyprusai.cy
+DTSTART;TZID=Asia/Nicosia:20251107T090000
+DTEND;TZID=Asia/Nicosia:20251107T100000
+SUMMARY:Keynote Talk: AI and climate by Dr. Elena Xoplaki
+URL:https://cyprusai.cy
+DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
+LOCATION:University of Cyprus (Leventis Building, Room B108)
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Keynote Talk: AI and climate by Dr. Elena Xoplaki
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTAMP:20251024T124435Z
+UID:cyprusai-20251107T100000-aiinhighereducation@cyprusai.cy
+DTSTART;TZID=Asia/Nicosia:20251107T100000
+DTEND;TZID=Asia/Nicosia:20251107T113000
+SUMMARY:AI in Higher Education
+URL:https://cyprusai.cy
+DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
+LOCATION:University of Cyprus (Leventis Building, Room B108)
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:AI in Higher Education
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTAMP:20251024T124435Z
+UID:cyprusai-20251107T113000-coffeebreak@cyprusai.cy
+DTSTART;TZID=Asia/Nicosia:20251107T113000
+DTEND;TZID=Asia/Nicosia:20251107T120000
+SUMMARY:Coffee Break
+URL:https://cyprusai.cy
+DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
+LOCATION:University of Cyprus (Leventis Building, Room B108)
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Coffee Break
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTAMP:20251024T124435Z
+UID:cyprusai-20251107T120000-aiineducation@cyprusai.cy
+DTSTART;TZID=Asia/Nicosia:20251107T120000
+DTEND;TZID=Asia/Nicosia:20251107T133000
+SUMMARY:AI in Education
+URL:https://cyprusai.cy
+DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
+LOCATION:University of Cyprus (Leventis Building, Room B108)
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:AI in Education
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTAMP:20251024T124435Z
+UID:cyprusai-20251107T133000-networkinglunch@cyprusai.cy
+DTSTART;TZID=Asia/Nicosia:20251107T133000
+DTEND;TZID=Asia/Nicosia:20251107T143000
+SUMMARY:Networking Lunch
+URL:https://cyprusai.cy
+DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
+LOCATION:University of Cyprus (Leventis Building, Room B108)
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Networking Lunch
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTAMP:20251024T124435Z
+UID:cyprusai-20251107T143000-aiincultureandheritage@cyprusai.cy
+DTSTART;TZID=Asia/Nicosia:20251107T143000
+DTEND;TZID=Asia/Nicosia:20251107T160000
+SUMMARY:AI in Culture and Heritage
+URL:https://cyprusai.cy
+DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
+LOCATION:University of Cyprus (Leventis Building, Room B108)
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:AI in Culture and Heritage
+END:VALARM
+END:VEVENT
+
+END:VCALENDAR

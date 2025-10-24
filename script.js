@@ -206,7 +206,7 @@ window.addEventListener('resize', function() {
             card.className = 'speaker-card';
             card.innerHTML = `
             <button class="speaker-photo-btn" data-speaker="${idx + 1}" aria-label="View CV">
-                <img src="${speaker.photo}" alt="Speaker Photo" class="speaker-photo" onerror="this.onerror=null;this.src='https://via.placeholder.com/150x150?text=Photo'" />
+                <img src="${speaker.photo}" alt="Speaker Photo" class="speaker-photo" onerror="this.onerror=null;this.src='biophotos/placeholder.png'" />
             </button>
             <div class="speaker-info">
                 <h3 class="speaker-name">${speaker.name}</h3>

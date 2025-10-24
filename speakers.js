@@ -86,5 +86,134 @@ window.speakers = [{
         role: "Session Chair",
         topic: "AI in Cybersecurity",
         cv: "Angelos K. Marnerides is an Asst. Professor of Cyber Physical Systems Security in the Department of Electrical and Computer Engineering (ECE) and a Faculty Member at the KIOS Research and Innovation Centre of Excellence at the University of Cyprus. He holds a BSc (Honours, 2006) from Middlesex University and an MSc with Distinction (2007) as well as a PhD (2011) in Computer Science from Lancaster University. He has also held research positions at Carnegie Mellon University, University College London, University of Porto, and Lancaster University. Before joining UCY, he was a tenured Associate Professor at University of Glasgow, where he led the Glasgow Cyber Defense group. He has published 80+ publications in top-tier IEEE/ACM conferences with research focusing on secure and resilient system design with strong theoretical underpinnings and practical, data-driven implementations. He is currently the coordinator of the €5.8M COCOON project funded by Horizon Europe — the first EU Innovation Action project coordinated by UCY KIOS — and the €6.4M EU Horizon FOCAL project. He also serves as the national representative in the European Telecommunications Standards Institute (ETSI) Working Group for the Cyber Resilience Act. Angelos is a Senior Member of Institute of Electrical and Electronics Engineers (IEEE)."
+    },
+    {
+        name: "Marios M. Polycarpou",
+        photo: "biophotos/marios-polycarpou.jpg",
+        capacity: "Professor, Electrical and Computer Engineering, University of Cyprus",
+        role: "Session Chair",
+        topic: "AI in Higher Education",
+        cv: "Marios Polycarpou is a Professor of Electrical and Computer Engineering and the Chair of the Advisory Board of the KIOS Research and Innovation Center of Excellence at the University of Cyprus. He is also a Founding Member of the Cyprus Academy of Sciences, Letters, and Arts, an Honorary Professor of Imperial College London, and a Member of Academia Europaea (The Academy of Europe).  He received the B.A degree in Computer Science and the B.Sc. in Electrical Engineering, both from Rice University, USA in 1987, and the M.S. and Ph.D. degrees in Electrical Engineering from the University of Southern California, in 1989 and 1992 respectively. Prof. Polycarpou is the recipient of the 2023 IEEE Frank Rosenblatt Technical Field Award and the 2016 IEEE Neural Networks Pioneer Award. He is a Fellow of IEEE and IFAC. His research work has been funded by several agencies and industry in Europe and the United States, including the prestigious European Research Council (ERC) Advanced Grant, the ERC Synergy Grant and the EU-Widening Teaming program."
+    },
+    {
+        name: "Nicolas Dietis",
+        photo: "biophotos/nicolas-dietis.jpg",
+        capacity: "Assist. Professor, Medical School, University of Cyprus",
+        role: "Panelist",
+        topic: "AI in Higher Education",
+        cv: "Dr Nikolaos Dietis is an Assistant Professor of Pharmacology at the University of Cyprus Medical School. Apart from his research activities in pharmacology, he is also interested in Medical Education and technology-enhanced learning, with a particular focus on the constructive use of AI in teaching & learning. He is a member of the European Commission’s 'European AI Alliance' and the Digital Education Hub. He has received a number of awards for excellence in teaching, including the 2025 Clinical Teacher 20th Anniversary Award by the Association for the Study of Medical Education."
+    },
+    {
+        name: "Tatiana Eleni Synodinou",
+        photo: "biophotos/",
+        capacity: "Vice-Rector for Academic Affairs, University of Cyprus",
+        role: "Panelist",
+        topic: "AI in Higher Education",
+        cv: ""
+    },
+    {
+        name: "Sorin Hermon",
+        photo: "biophotos/",
+        capacity: "Associate Professor in Digital Cultural Heritage, Cyprus Institute",
+        role: "",
+        topic: "AI in Culture and Heritage",
+        cv: ""
+    },
+    {
+        name: "Spyros Armostis",
+        photo: "biophotos/",
+        capacity: "Assist. Professor, Department of English Studies, University of Cyprus",
+        role: "panelist",
+        topic: "AI in Culture and Heritage",
+        cv: "Spyros Armostis is an Assistant Professor in Linguistics at the Department of English Studies, University of Cyprus. He holds a PhD and an MPhil in Linguistics (Phonetics) from the University of Cambridge and a BA in Classics from the University of Cyprus. His research focuses mainly on phonetics, phonology, sociolinguistics, clinical linguistics, grapholinguistics, and documentary linguistics. Focal points of his work have been the study of Cypriot Greek and Cypriot Arabic. He is currently a board member of the Cyprus Linguistics Society (CyLing) and an appointed member of the Cyprus Permanent Committee for the Standardisation of Geographical Names (ΜΚΕΤΓΟ). Finally, he is the Coordinator of the “Cy[Φ]” (pronounced [ˈsaɪ̯ ˈfaɪ̯]) Phonetics Lab, Department of English Studies, University of Cyprus."
+    },
+    {
+        name: "Theocharis Theocharides",
+        photo: "biophotos/charis-theocharides.jpg",
+        capacity: "Associate Professor, Department of Electrical and Computer Engineering, University of Cyprus",
+        role: "Session Chair",
+        topic: "Emerging Research in AI",
+        cv: "Prof. Theocharis Theocharides holds a Ph.D. in Computer Science and Engineering from the Pennsylvania State University. He is an Associate Professor and the Department Chair, at the Department of Electrical and Computer Engineering, at the University of Cyprus and the Director of Research of the KIOS Research and Innovation Centre of Excellence. His research is focused on embedded, mobile and adaptive systems, tinyML, embedded computer vision and pattern recognition architectures and models, and intelligent system-level monitoring and dynamic reconfiguration for performance, energy and reliability of Systems-on-Chip. He is a senior member of the IEEE and the IEEE Computer Society, a member of the ACM, a member of the HiPEAC Network of Excellence."
+    },
+    {
+        name: "Sotirios Chatzis",
+        photo: "biophotos/",
+        capacity: "Associate Professor, Chair of Department of Electrical Eng. & Computer Science and Eng., Cyprus University of Technology",
+        role: "Panelist",
+        topic: "Emerging Research in AI",
+        cv: "."
+    },
+    {
+        name: "Constantine Dovrolis",
+        photo: "biophotos/",
+        capacity: "Director of the Center for Computational Science and Technology (CaSToRC) at The Cyprus Institute (CyI)",
+        role: "Panelist",
+        topic: "Emerging Research in AI",
+        cv: ""
+    },
+    {
+        name: "Achilles K. Emilianides",
+        photo: "biophotos/achilles-emilianides.jpg",
+        capacity: "Professor of Law and Dean of the School of Law of the University of Nicosia",
+        role: "Session Chair",
+        topic: "AI and Challenges to Democracy",
+        cv: "Prof. Achilles C. Emilianides is a practicing advocate, Professor of Law and Dean of the School of Law of the University of Nicosia. He holds a PhD in Law from the Aristotle University of Thessaloniki. He is a Founding Member and President of the Cyprus Academy of Sciences, Letters, and Arts. He has also been elected as an ordinary member of the European Academy of Sciences and Arts, and is a member of ALLEA (All European Academies) representing the Cyprus Academy. He is also the President of the Royal Commonwealth Society Cyprus Branch and a member of numerous scientific societies. He has published more than 30 monographs and 100 scientific papers."
+    },
+    {
+        name: "Constantinos Adamides",
+        photo: "biophotos/",
+        capacity: "Assoc. Professor, Head of Department of Politics and Governance, University of Nicosia",
+        role: "Panelist",
+        topic: "AI and Challenges to Democracy",
+        cv: "Dr. Constantinos Adamides is an Associate Professor of International Relations and the Head of the Department of Politics and Governance, at the University of Nicosia (UNic), where he also served as the Director of the Diplomatic Academy for the period 2014-2025. He currently also serves a member of the Executive Academic Board of the European Security and Defense College. Further to the academic activities, Dr. Adamides frequently works with the government sector, as well as with foreign diplomatic Missions in Cyprus on issues pertinent to security and geopolitics. In 2014, Dr. Adamides was appointed as a Member of the first Geostrategic Council of the Republic of Cyprus (2014-2018). Constantinos holds a PhD in Political Science and International Studies, an MA in Diplomacy and International Relations, an MBA in Finance, and a BSc in Finance and Political Science."
+    },
+    {
+        name: "Thomas-Nectarios Papanastasiou",
+        photo: "biophotos/",
+        capacity: "Assoc. Professor, University of Neapolis",
+        role: "Panelist",
+        topic: "AI and Challenges to Democracy",
+        cv: ""
+    },
+    {
+        name: "Dimitrios Devetzis",
+        photo: "biophotos/",
+        capacity: "Assist. Professor, University of Frederick",
+        role: "Panelist",
+        topic: "AI and Challenges to Democracy",
+        cv: ""
+    },
+    {
+        name: "Fereniki Panagopoulou-Koutnatzi",
+        photo: "biophotos/",
+        capacity: "Assoc. Professor, Head of Department of Public Administration, Panteion University",
+        role: "Panelist",
+        topic: "AI and Challenges to Democracy",
+        cv: ""
+    },
+    {
+        name: "Christos Panayiotou",
+        photo: "biophotos/christos-panayiotou",
+        capacity: "Professor, Department of Electrical and Computer Engineering, University of Cyprus",
+        role: "Session Chair",
+        topic: "AI in Critical Infrastructures",
+        cv: "Christos Panayiotou is a Professor with the Electrical and Computer Engineering Department and the Director of the KIOS Research and Innovation Center of Excellence at the University of Cyprus. Christos has received a B.Sc. and a Ph.D. degree in Electrical and Computer Engineering from the University of Massachusetts at Amherst, in 1994 and 1999 respectively. He also received an MBA from the Isenberg School of Management, at the aforementioned university in 1999. His research interests include modeling, control, optimization and performance evaluation of discrete event and hybrid systems, intelligent transportation systems, cyber-physical systems, event detection and localization, fault diagnosis, machine learning, wireless, ad hoc and sensor networks, resource allocation, and intelligent buildings."
+    },
+    {
+        name: "Petros A. Ioannou",
+        photo: "biophotos/petros-ioannou",
+        capacity: "Professor, School of Engineering,University of Southern California",
+        role: "Panelist",
+        topic: "AI in Critical Infrastructures",
+        cv: "Petros A. Ioannou is a University Professor and the A.V. ‘Bal’ Balakrishnan Chair in the Department of Electrical and Computer Engineering. He the Director of the Center for Responsible AI for Decisions Making in Finance (CREDIF) and the Associate Director for Research of METRANS. He holds courtesy appointments with the Department of Aerospace and Mechanical Engineering, the Department of Industrial Systems Engineering and KIOS of the University of Cyprus. He is the founder and Director of the Master Program on Financial Engineering at USC. He is a member of the National Academy of Engineering, Fellow of the National Academy of Inventors, Foreign Fellow of the Academia Europaea and European Academy of Science and Life fellow of IEEE and Fellow of IFAC and AAAS. He received many awards in the areas of Control and Transportation, and he is the author/co-author of 11 textbooks and edited books and over 400 research papers in the areas of controls, intelligent transportation systems and autonomous vehicles. He is the President Elect of the Intelligent Transportation Systems (ITS) Society for the year 2025 and the President of the ITS Society starting January 2026. He serves as expert witness/consultant on cases involving vehicle control, robotics, safety and human factors, accident reconstruction and patent litigation."
+    },
+    {
+        name: "Socrates Metaxas",
+        photo: "biophotos/",
+        capacity: "Managing Director, Limassol District Local Government Organization",
+        role: "Panelist",
+        topic: "AI in Critical Infrastructures",
+        cv: ""
     }
+
 ];
