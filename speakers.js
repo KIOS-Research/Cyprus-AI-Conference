@@ -164,7 +164,7 @@ window.speakers = [{
         capacity: "ICT Standards Expert, Cyprus Organization for Standardization",
         role: "Panelist",
         topic: "Workshop: AI Services",
-        cv: "Joseph Karis is an ICT Standards Expert at the Cyprus Organization for Standardization (CYS) with over 17 years of experience in ICT standardization. He actively engages industry stakeholders in the ICT standardization arena, promoting innovation-driven standards. Through his work, he fosters ICT standardization among industry, academia, and authorities, strengthening Cyprusâs role in European and international ICT standardization. His experience in the ICT standards arena spans across various technologies, from AI governance and digital trust frameworks to blockchain, cybersecurity, quantum security, interoperability, and emerging technologies that shape Europeâs digital and secure transformation"
+        cv: "Joseph Karis is an ICT Standards Expert at the Cyprus Organization for Standardization (CYS) with over 17 years of experience in ICT standardization. He actively engages industry stakeholders in the ICT standardization arena, promoting innovation-driven standards. Through his work, he fosters ICT standardization among industry, academia, and authorities, strengthening Cyprusâs role in European and international ICT standardization. His experience in the ICT standards arena spans across various technologies, from AI governance and digital trust frameworks to blockchain, cybersecurity, quantum security, interoperability, and emerging technologies that shape Europe's digital and secure transformation"
     },
     {
         name: "Panayiota (Pani) Kendeou",
