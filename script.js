@@ -205,7 +205,8 @@ window.addEventListener('resize', function() {
         function createSpeakerCard(speaker, idx) {
             const card = document.createElement('div');
             card.className = 'speaker-card';
-            card.setAttribute('data-topic', speaker.topic);
+            // Store the whole raw topic string for substring search
+            card.setAttribute('data-topic', (speaker.topic || ''));
             card.innerHTML = `
             <button class="speaker-photo-btn" data-speaker="${idx + 1}" aria-label="View CV">
                 <img src="${speaker.photo}" alt="Speaker Photo" class="speaker-photo" onerror="this.onerror=null;this.src='biophotos/placeholder.png'" />
@@ -217,8 +218,8 @@ window.addEventListener('resize', function() {
                 <p class="speaker-topic">${speaker.topic}</p>
             </div>
         `;
-        return card;
-    }
+            return card;
+        }
 
     function populateSpeakersGrid(speakers) {
         if (!grid) return;
@@ -232,14 +233,15 @@ window.addEventListener('resize', function() {
         });
     }
 
-    function filterSpeakers(topic) {
+    function filterSpeakers(filter) {
         const speakerCards = document.querySelectorAll('.speaker-card');
+        const filterNorm = filter.trim().toLowerCase();
         speakerCards.forEach(card => {
-            if (topic === 'all' || card.getAttribute('data-topic') === topic) {
+            const rawTopic = (card.getAttribute('data-topic') || '').toLowerCase();
+            if (filterNorm === 'all' || rawTopic.includes(filterNorm)) {
                 card.style.display = 'flex';
                 card.style.opacity = '0';
                 card.style.transform = 'translateY(20px)';
-                // Trigger animation
                 setTimeout(() => {
                     card.style.opacity = '1';
                     card.style.transform = 'translateY(0)';
@@ -317,5 +319,59 @@ window.addEventListener('resize', function() {
                 `<p><strong>${sess.time}</strong> ${sess.title}${sess.details ? `<br><span>${sess.details}</span>` : ''}</p>`).join('')}
         `;
         grid.appendChild(card);
+    });
+})();
+
+// Organizer info modal logic
+(function() {
+    const orgs = {
+        kios: {
+            title: 'KIOS Research and Innovation Center of Excellence',
+            desc: 'The KIOS Research and Innovation Center of Excellence (KIOS CoE) operates within the University of Cyprus and currently is a leading research and innovation center in Cyprus and the region on Information and Communication Technologies (ICT). The Center collaborates strategically with Imperial College, London, as well as with a plethora of local and international research organizations and other stakeholders. Currently, the Center employs more than 200 people and is involved in more than 50 research and innovation projects funded by various European and national funding agencies, as well as in more than 25 projects funded by the industry.',
+            link: 'https://www.kios.ucy.ac.cy/'
+        },
+        cyprusacademy: {
+            title: 'Cyprus Academy of Sciences, Letters and Arts',
+            desc: 'The Cyprus Academy of Sciences, Letters and Arts was founded in 2017 and launched by the President of Cyprus Nicos Anastasiades in 2018. Its aim is to enhance the scientific and cultural achievements of Cyprus by promoting and rewarding excellence in Science, Letters, and Arts, and cultivating interactions between the Sciences, Letters, Humanities, and the Arts in the Republic of Cyprus. It is an independent and autonomous institution consisting of 3 Sections: Natural Sciences, Letters, and Arts (Humanities), and Ethical Sciences, Economic and Political Sciences.',
+            link: 'https://www.academyofcyprus.cy/'
+        }
+    };
+    const orgModal = document.getElementById('org-modal');
+    const orgTitle = document.getElementById('org-modal-title');
+    const orgDesc = document.getElementById('org-modal-desc');
+    const orgLink = document.getElementById('org-modal-link');
+    const orgClose = document.querySelector('.org-modal-close');
+    const logoItems = document.querySelectorAll('.logo-item');
+    function showOrgModal(orgKey) {
+        if (!orgs[orgKey]) return;
+        orgTitle.textContent = orgs[orgKey].title;
+        orgDesc.textContent = orgs[orgKey].desc;
+        orgLink.textContent = 'Visit Website';
+        orgLink.href = orgs[orgKey].link;
+        orgModal.style.display = 'flex';
+        orgModal.setAttribute('aria-hidden', 'false');
+        orgModal.focus();
+        document.body.style.overflow = 'hidden';
+    }
+    function closeOrgModal() {
+        orgModal.style.display = 'none';
+        orgModal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+    }
+    logoItems.forEach(item => {
+        item.style.cursor = 'pointer';
+        item.addEventListener('click', function() {
+            const orgKey = this.getAttribute('data-org');
+            showOrgModal(orgKey);
+        });
+    });
+    orgClose && orgClose.addEventListener('click', closeOrgModal);
+    orgModal && orgModal.addEventListener('click', function(e) {
+        if (e.target === orgModal) closeOrgModal();
+    });
+    document.addEventListener('keydown', function(e) {
+        if (orgModal.style.display === 'flex' && (e.key === 'Escape' || e.key === 'Esc')) {
+            closeOrgModal();
+        }
     });
 })();

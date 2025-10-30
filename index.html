@@ -83,6 +83,7 @@
         <section id="topics" class="section topics-section">
             <div class="container">
                 <h2>Topics</h2>
+                <h3>Panel Topics</h3>
                 <div class="topics-grid">
                     <div class="topic-card">
                         <h3>AI in Education</h3>
@@ -112,6 +113,19 @@
                     </div>
                     <div class="topic-card">
                         <h3>AI in Cybersecurity</h3>
+                    </div>
+                </div>
+                <br>
+                <h3>Keynote Topics</h3>
+                <div class="topics-grid">
+                    <div class="topic-card">
+                        <h3>"AI in Climate" by Dr. Elena Xoplaki</h3>
+                    </div>
+                    <div class="topic-card">
+                        <h3>"Artificial Intelligence: Revolution or Bubble?" by Michail Bletsas</h3>
+                    </div>
+                    <div class="topic-card">
+                        <h3>"Cyprus AI 2030: AI for Government, Research, and Industry" by Demetris Skoudides</h3>
                     </div>
                 </div>
             </div>
@@ -167,13 +181,16 @@
                 <h2>Speakers</h2>
                 <div class="speaker-filters">
                     <button class="filter-btn active" data-filter="all">All</button>
-                    <button class="filter-btn" data-filter="AI in Industry and Innovation">AI in Industry and Innovation</button>
-                    <button class="filter-btn" data-filter="AI in Cybersecurity">AI in Cybersecurity</button>
-                    <button class="filter-btn" data-filter="AI in Higher Education">AI in Higher Education</button>
-                    <button class="filter-btn" data-filter="AI in Culture and Heritage">AI in Culture and Heritage</button>
-                    <button class="filter-btn" data-filter="Emerging Research in AI">Emerging Research in AI</button>
-                    <button class="filter-btn" data-filter="AI and Challenges to Democracy">AI and Challenges to Democracy</button>
-                    <button class="filter-btn" data-filter="AI in Critical Infrastructures">AI in Critical Infrastructures</button>
+                    <button class="filter-btn" data-filter="ai in education: policy and practice">AI in Education: Policy and Practice</button>
+                    <button class="filter-btn" data-filter="ai in healthcare">AI in Healthcare</button>
+                    <button class="filter-btn" data-filter="ai in industry and innovation">AI in Industry and Innovation</button>
+                    <button class="filter-btn" data-filter="ai in cybersecurity">AI in Cybersecurity</button>
+                    <button class="filter-btn" data-filter="ai in higher education">AI in Higher Education</button>
+                    <button class="filter-btn" data-filter="ai in culture and heritage">AI in Culture and Heritage</button>
+                    <button class="filter-btn" data-filter="emerging research in ai">Emerging Research in AI</button>
+                    <button class="filter-btn" data-filter="ai and challenges to democracy">AI and Challenges to Democracy</button>
+                    <button class="filter-btn" data-filter="ai in critical infrastructures">AI in Critical Infrastructures</button>
+                    <button class="filter-btn" data-filter="workshop: ai services">Workshop: AI Services</button>
                 </div>
                 <div class="speakers-grid">
                     <!-- Speaker cards will be injected here -->
@@ -224,12 +241,21 @@
             <div class="container">
                 <h2>Organizers</h2>
                 <div class="logo-scroller" role="list" aria-label="Partner logos">
-                    <div class="logo-item" role="listitem">
+                    <div class="logo-item" data-org="cyprusacademy" role="listitem">
                         <img src="images/cyprusacademylogo.png" alt="Cyprus Academy of Sciences, Letters and Arts" loading="lazy">
                     </div>
-                    <div class="logo-item" role="listitem">
+                    <div class="logo-item" data-org="kios" role="listitem">
                         <img src="images/kioslogo.png" alt="KIOS Research and Innovation Center of Excellence" loading="lazy">
                     </div>
+                </div>
+            </div>
+            <!-- Organizer Modal for logo info -->
+            <div id="org-modal" class="org-modal" aria-modal="true" role="dialog" tabindex="-1" style="display:none;">
+                <div class="org-modal-content">
+                    <button class="org-modal-close" aria-label="Close Modal">&times;</button>
+                    <h3 id="org-modal-title">Organization Name</h3>
+                    <p id="org-modal-desc">Short description will appear here.</p>
+                    <p><a id="org-modal-link" href="#" target="_blank" rel="noopener noreferrer">Visit Website</a></p>
                 </div>
             </div>
         </section>

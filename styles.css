@@ -836,3 +836,50 @@ p {
         grid-template-columns: 1fr;
     }
 }
+
+.org-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(18, 12, 14, 0.65);
+    z-index: 3000;
+    transition: opacity 0.2s;
+}
+
+.org-modal-content {
+    background: #fff;
+    border-radius: 1rem;
+    padding: 2rem 2.5rem;
+    max-width: 500px;
+    width: 90vw;
+    box-shadow: 0 8px 32px -4px rgba(69, 29, 204, 0.15);
+    position: relative;
+    text-align: left;
+}
+
+.org-modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #451dcc;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.org-modal-close:hover {
+    color: #ff928b;
+}
+
+@media (max-width: 600px) {
+    .org-modal-content {
+        padding: 1.2rem 0.7rem;
+    }
+}

@@ -31,7 +31,7 @@ SUMMARY:Registration
 URL:https://cyprusai.cy
 DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
 LOCATION:University of Cyprus (Leventis Building, Room B108)
-STATUS:CONFIRMED
+STATUS:TENTATIVE
 BEGIN:VALARM
 TRIGGER:-PT10M
 ACTION:DISPLAY
@@ -48,7 +48,7 @@ SUMMARY:Welcome Remarks
 URL:https://cyprusai.cy
 DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
 LOCATION:University of Cyprus (Leventis Building, Room B108)
-STATUS:CONFIRMED
+STATUS:TENTATIVE
 BEGIN:VALARM
 TRIGGER:-PT10M
 ACTION:DISPLAY
@@ -65,7 +65,7 @@ SUMMARY:Emerging Research in AI
 URL:https://cyprusai.cy
 DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
 LOCATION:University of Cyprus (Leventis Building, Room B108)
-STATUS:CONFIRMED
+STATUS:TENTATIVE
 BEGIN:VALARM
 TRIGGER:-PT10M
 ACTION:DISPLAY
@@ -82,7 +82,7 @@ SUMMARY:Coffee Break
 URL:https://cyprusai.cy
 DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
 LOCATION:University of Cyprus (Leventis Building, Room B108)
-STATUS:CONFIRMED
+STATUS:TENTATIVE
 BEGIN:VALARM
 TRIGGER:-PT10M
 ACTION:DISPLAY
@@ -99,7 +99,7 @@ SUMMARY:AI in Healthcare
 URL:https://cyprusai.cy
 DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
 LOCATION:University of Cyprus (Leventis Building, Room B108)
-STATUS:CONFIRMED
+STATUS:TENTATIVE
 BEGIN:VALARM
 TRIGGER:-PT10M
 ACTION:DISPLAY
@@ -116,7 +116,7 @@ SUMMARY:Networking Lunch
 URL:https://cyprusai.cy
 DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
 LOCATION:University of Cyprus (Leventis Building, Room B108)
-STATUS:CONFIRMED
+STATUS:TENTATIVE
 BEGIN:VALARM
 TRIGGER:-PT10M
 ACTION:DISPLAY
@@ -126,18 +126,18 @@ END:VEVENT
 
 BEGIN:VEVENT
 DTSTAMP:20251024T124435Z
-UID:cyprusai-20251105T140000-keynotetalk@cyprusai.cy
+UID:cyprusai-20251105T140000-keynotetalk-michailbletsas@cyprusai.cy
 DTSTART;TZID=Asia/Nicosia:20251105T140000
 DTEND;TZID=Asia/Nicosia:20251105T150000
-SUMMARY:Keynote Talk
+SUMMARY:Keynote Talk: Michail Bletsas "Artificial Intelligence: Revolution or Bubble?"
 URL:https://cyprusai.cy
 DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
 LOCATION:University of Cyprus (Leventis Building, Room B108)
-STATUS:CONFIRMED
+STATUS:TENTATIVE
 BEGIN:VALARM
 TRIGGER:-PT10M
 ACTION:DISPLAY
-DESCRIPTION:Keynote Talk
+DESCRIPTION:Keynote Talk: Michail Bletsas
 END:VALARM
 END:VEVENT
 
@@ -150,7 +150,7 @@ SUMMARY:Coffee Break
 URL:https://cyprusai.cy
 DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
 LOCATION:University of Cyprus (Leventis Building, Room B108)
-STATUS:CONFIRMED
+STATUS:TENTATIVE
 BEGIN:VALARM
 TRIGGER:-PT10M
 ACTION:DISPLAY
@@ -167,7 +167,7 @@ SUMMARY:AI and Cybersecurity
 URL:https://cyprusai.cy
 DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
 LOCATION:University of Cyprus (Leventis Building, Room B108)
-STATUS:CONFIRMED
+STATUS:TENTATIVE
 BEGIN:VALARM
 TRIGGER:-PT10M
 ACTION:DISPLAY
@@ -184,7 +184,7 @@ SUMMARY:Registration
 URL:https://cyprusai.cy
 DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
 LOCATION:University of Cyprus (Leventis Building, Room B108)
-STATUS:CONFIRMED
+STATUS:TENTATIVE
 BEGIN:VALARM
 TRIGGER:-PT10M
 ACTION:DISPLAY
@@ -194,31 +194,14 @@ END:VEVENT
 
 BEGIN:VEVENT
 DTSTAMP:20251024T124435Z
-UID:cyprusai-20251106T090000-keynotetalk@cyprusai.cy
+UID:cyprusai-20251106T090000-aiandchallengestodemocracy@cyprusai.cy
 DTSTART;TZID=Asia/Nicosia:20251106T090000
-DTEND;TZID=Asia/Nicosia:20251106T100000
-SUMMARY:Keynote Talk
-URL:https://cyprusai.cy
-DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
-LOCATION:University of Cyprus (Leventis Building, Room B108)
-STATUS:CONFIRMED
-BEGIN:VALARM
-TRIGGER:-PT10M
-ACTION:DISPLAY
-DESCRIPTION:Keynote Talk
-END:VALARM
-END:VEVENT
-
-BEGIN:VEVENT
-DTSTAMP:20251024T124435Z
-UID:cyprusai-20251106T100000-aiandchallengestodemocracy@cyprusai.cy
-DTSTART;TZID=Asia/Nicosia:20251106T100000
-DTEND;TZID=Asia/Nicosia:20251106T113000
+DTEND;TZID=Asia/Nicosia:20251106T103000
 SUMMARY:AI and Challenges to Democracy
 URL:https://cyprusai.cy
 DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
 LOCATION:University of Cyprus (Leventis Building, Room B108)
-STATUS:CONFIRMED
+STATUS:TENTATIVE
 BEGIN:VALARM
 TRIGGER:-PT10M
 ACTION:DISPLAY
@@ -228,14 +211,14 @@ END:VEVENT
 
 BEGIN:VEVENT
 DTSTAMP:20251024T124435Z
-UID:cyprusai-20251106T113000-coffeebreak@cyprusai.cy
-DTSTART;TZID=Asia/Nicosia:20251106T113000
-DTEND;TZID=Asia/Nicosia:20251106T120000
+UID:cyprusai-20251106T103000-coffeebreak@cyprusai.cy
+DTSTART;TZID=Asia/Nicosia:20251106T103000
+DTEND;TZID=Asia/Nicosia:20251106T110000
 SUMMARY:Coffee Break
 URL:https://cyprusai.cy
 DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
 LOCATION:University of Cyprus (Leventis Building, Room B108)
-STATUS:CONFIRMED
+STATUS:TENTATIVE
 BEGIN:VALARM
 TRIGGER:-PT10M
 ACTION:DISPLAY
@@ -245,14 +228,14 @@ END:VEVENT
 
 BEGIN:VEVENT
 DTSTAMP:20251024T124435Z
-UID:cyprusai-20251106T120000-aiincriticalinfrastructures@cyprusai.cy
-DTSTART;TZID=Asia/Nicosia:20251106T120000
-DTEND;TZID=Asia/Nicosia:20251106T133000
+UID:cyprusai-20251106T110000-aiincriticalinfrastructures@cyprusai.cy
+DTSTART;TZID=Asia/Nicosia:20251106T110000
+DTEND;TZID=Asia/Nicosia:20251106T123000
 SUMMARY:AI in Critical Infrastructures
 URL:https://cyprusai.cy
 DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
 LOCATION:University of Cyprus (Leventis Building, Room B108)
-STATUS:CONFIRMED
+STATUS:TENTATIVE
 BEGIN:VALARM
 TRIGGER:-PT10M
 ACTION:DISPLAY
@@ -262,18 +245,35 @@ END:VEVENT
 
 BEGIN:VEVENT
 DTSTAMP:20251024T124435Z
-UID:cyprusai-20251106T133000-networkinglunch@cyprusai.cy
-DTSTART;TZID=Asia/Nicosia:20251106T133000
-DTEND;TZID=Asia/Nicosia:20251106T143000
+UID:cyprusai-20251106T123000-networkinglunch@cyprusai.cy
+DTSTART;TZID=Asia/Nicosia:20251106T123000
+DTEND;TZID=Asia/Nicosia:20251106T133000
 SUMMARY:Networking Lunch
 URL:https://cyprusai.cy
 DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
 LOCATION:University of Cyprus (Leventis Building, Room B108)
-STATUS:CONFIRMED
+STATUS:TENTATIVE
 BEGIN:VALARM
 TRIGGER:-PT10M
 ACTION:DISPLAY
 DESCRIPTION:Networking Lunch
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTAMP:20251024T124435Z
+UID:cyprusai-20251106T133000-keynotetalk-demetrisskourides@cyprusai.cy
+DTSTART;TZID=Asia/Nicosia:20251106T133000
+DTEND;TZID=Asia/Nicosia:20251106T143000
+SUMMARY:Keynote Talk: Demetris Skourides "Cyprus AI 2030: AI for Government, Research, and Industry"
+URL:https://cyprusai.cy
+DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
+LOCATION:University of Cyprus (Leventis Building, Room B108)
+STATUS:TENTATIVE
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Keynote Talk: Demetris Skourides
 END:VALARM
 END:VEVENT
 
@@ -286,7 +286,7 @@ SUMMARY:AI in Industry and Innovation
 URL:https://cyprusai.cy
 DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
 LOCATION:University of Cyprus (Leventis Building, Room B108)
-STATUS:CONFIRMED
+STATUS:TENTATIVE
 BEGIN:VALARM
 TRIGGER:-PT10M
 ACTION:DISPLAY
@@ -303,7 +303,7 @@ SUMMARY:Workshop: AI Services
 URL:https://cyprusai.cy
 DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
 LOCATION:University of Cyprus (Leventis Building, Room B108)
-STATUS:CONFIRMED
+STATUS:TENTATIVE
 BEGIN:VALARM
 TRIGGER:-PT10M
 ACTION:DISPLAY
@@ -320,7 +320,7 @@ SUMMARY:Registration
 URL:https://cyprusai.cy
 DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
 LOCATION:University of Cyprus (Leventis Building, Room B108)
-STATUS:CONFIRMED
+STATUS:TENTATIVE
 BEGIN:VALARM
 TRIGGER:-PT10M
 ACTION:DISPLAY
@@ -330,18 +330,18 @@ END:VEVENT
 
 BEGIN:VEVENT
 DTSTAMP:20251024T124435Z
-UID:cyprusai-20251107T090000-keynotetalkaiandclimatebydr.elenaxoplaki@cyprusai.cy
+UID:cyprusai-20251107T090000-keynotetalk-elenaxoplaki@cyprusai.cy
 DTSTART;TZID=Asia/Nicosia:20251107T090000
 DTEND;TZID=Asia/Nicosia:20251107T100000
-SUMMARY:Keynote Talk: AI and climate by Dr. Elena Xoplaki
+SUMMARY:Keynote Talk: Dr Elena Xoplaki "AI and Climate"
 URL:https://cyprusai.cy
 DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
 LOCATION:University of Cyprus (Leventis Building, Room B108)
-STATUS:CONFIRMED
+STATUS:TENTATIVE
 BEGIN:VALARM
 TRIGGER:-PT10M
 ACTION:DISPLAY
-DESCRIPTION:Keynote Talk: AI and climate by Dr. Elena Xoplaki
+DESCRIPTION:Keynote Talk: Dr Elena Xoplaki
 END:VALARM
 END:VEVENT
 
@@ -354,7 +354,7 @@ SUMMARY:AI in Higher Education
 URL:https://cyprusai.cy
 DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
 LOCATION:University of Cyprus (Leventis Building, Room B108)
-STATUS:CONFIRMED
+STATUS:TENTATIVE
 BEGIN:VALARM
 TRIGGER:-PT10M
 ACTION:DISPLAY
@@ -371,7 +371,7 @@ SUMMARY:Coffee Break
 URL:https://cyprusai.cy
 DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
 LOCATION:University of Cyprus (Leventis Building, Room B108)
-STATUS:CONFIRMED
+STATUS:TENTATIVE
 BEGIN:VALARM
 TRIGGER:-PT10M
 ACTION:DISPLAY
@@ -388,7 +388,7 @@ SUMMARY:AI in Education
 URL:https://cyprusai.cy
 DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
 LOCATION:University of Cyprus (Leventis Building, Room B108)
-STATUS:CONFIRMED
+STATUS:TENTATIVE
 BEGIN:VALARM
 TRIGGER:-PT10M
 ACTION:DISPLAY
@@ -405,7 +405,7 @@ SUMMARY:Networking Lunch
 URL:https://cyprusai.cy
 DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
 LOCATION:University of Cyprus (Leventis Building, Room B108)
-STATUS:CONFIRMED
+STATUS:TENTATIVE
 BEGIN:VALARM
 TRIGGER:-PT10M
 ACTION:DISPLAY
@@ -422,7 +422,7 @@ SUMMARY:AI in Culture and Heritage
 URL:https://cyprusai.cy
 DESCRIPTION:Exploring the transformative impact of Artificial Intelligence across sectors. Organized by the Cyprus Academy of Sciences, Letters and Arts with KIOS Research and Innovation Center of Excellence.
 LOCATION:University of Cyprus (Leventis Building, Room B108)
-STATUS:CONFIRMED
+STATUS:TENTATIVE
 BEGIN:VALARM
 TRIGGER:-PT10M
 ACTION:DISPLAY
