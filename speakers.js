@@ -1,4 +1,40 @@
 window.speakers = [{
+
+        name: "Nicodemos Damianou",
+        photo: "biophotos/nicodemos-damianou.jpg",
+        capacity: "Deputy Minister of Research, Innovation and Digital Policy",
+        role: "",
+        topic: "Welcome Address",
+        cv: "Dr. Damianou holds a Sc.B Degree in Computer Science from Brown University USA, a Ph.D in Computer Security & Policy-based Management of enterprise-wide Computer Networks from Imperial College UK, a Diploma of Information Security from Imperial College, and an MBA from the University of Cyprus. He is an IT and Information Security professional with many years of experience in Payment Systems and Fintech, Risk Management Methodologies and Digital Transformation Technologies.He served at managerial positions within the Bank of Cyprus Group. From November 2017 to January 2024 he was the General Manager of JCC Payment Systems Ltd."
+    },
+    {
+        name: "Michail Bletsas",
+        photo: "biophotos/michael-bletsas2.jpg",
+        capacity: "Governor, National Cybersecurity Authority of Greece, Director of Computing, MIT Media Lab",
+        role: "Keynote Speaker, Panelist",
+        topic: "Keynote, AI in Cybersecurity",
+        cv: "Michail Bletsas has served as Governor of the National Cybersecurity Authority since April 2024, actively contributing to the development of the national cybersecurity strategy. He is a Research Scientist and Director of Computing at the MIT Media Lab, where he has worked since 1996, overseeing the production, transmission, consumption, and storage of data. He was a core member of the technical and design team of the âOne Laptop per Childâ (OLPC) initiative, which created the pioneering and award-winning âXOâ laptop. He is frequently invited as a keynote speaker at international conferences and public forums.  His research interests include network security, countering the systematic spread of disinformation, wireless networks, and the development of high- performance computing infrastructures for machine learning. In recent years, he has been extensively engaged in consulting on technology and technology policy.  He holds a Diploma in Electrical Engineering from the Aristotle University of Thessaloniki and a masterâs degree in Computer Engineering from Boston University"
+    },
+    {
+        name: "Demetris Skourides",
+        photo: "biophotos/demetris-skourides.jpg",
+        capacity: "Chief Scientist for Research, Innovation, and Technology",
+        role: "Keynote Speaker",
+        topic: "Keynote",
+        cv: "Demetris Skourides is the Chief Scientist for Research, Innovation, and Technology of the Republic of Cyprus and Chairman of the National AI Taskforce. He holds a BSc in Computer Science from Arizona State University and an MBA from Henley Management College. Additionally, he has been trained in digital transformation, AI, data monetization, and sales through programs at Columbia, Stanford, MIT, and Harvard. With a career spanning Oracle and Amazon Web Services, he has held executive roles across Europe, the Middle East, Africa, and Asia-Pacific. At Oracle, where he worked since 2006, he played a key role in driving cloud and ISV solutions transformation. He later joined AWS as Industry Strategist for EMEA, focusing on financial services, retail, manufacturing, and energy. Demetris Skourides spearheaded the establishment of Cloud Partner Centres of Excellence in Spain, Italy, Switzerland, Poland, Saudi Arabia, Dubai, South Korea, Kenya, and South Africa, enabling innovation and new revenue streams. He also chairs the Board of Directors of the Research and Innovation Foundation (ex officio)."
+    },
+
+    {
+
+
+        name: "Dr. Elena Xoplaki",
+        photo: "biophotos/elena-xoplaki.jpg",
+        capacity: "Assistant Professor, Justus-Liebig-University of Giessen",
+        role: "Keynote Speaker",
+        topic: "Keynote",
+        cv: "Dr. Xoplaki is Assistant Professor at the Department of Geography of the Justus-Liebig-University of Giessen. She is an expert in Mediterranean climate change. She has conducted analysis on weather extremes (heat waves, floods, droughts, etc.) and health impacts, paleoclimatology; climate reconstructions / model comparison, influence of circulation on European and Mediterranean climate. She has participated in and coordinated several European, Swiss and US research projects. She holds a Ph.D. in Natural Sciences from the University of Bern, Switzerland. From August 2011, she is awarded an Akademischer Rat (Assistant Professor) position at the University of Giessen, Germany. In this function, she is doing research on the Mediterranean climate, climate change and impacts and she is teaching at the BSc and MSc level at the Department of Geography."
+    },
+    {
         name: "Constantinos Adamides",
         photo: "biophotos/constantinos-adamides.jpg",
         capacity: "Assoc. Professor, Head of Department of Politics and Governance, University of Nicosia",
@@ -23,12 +59,12 @@ window.speakers = [{
         cv: "Spyros Armostis is an Assistant Professor in Linguistics at the Department of English Studies, University of Cyprus. He holds a PhD and an MPhil in Linguistics (Phonetics) from the University of Cambridge and a BA in Classics from the University of Cyprus. His research focuses mainly on phonetics, phonology, sociolinguistics, clinical linguistics, grapholinguistics, and documentary linguistics. Focal points of his work have been the study of Cypriot Greek and Cypriot Arabic. He is currently a board member of the Cyprus Linguistics Society (CyLing) and an appointed member of the Cyprus Permanent Committee for the Standardisation of Geographical Names (ÎÎÎÎ¤ÎÎ). Finally, he is the Coordinator of the âCy[Î¦]â (pronounced [ËsaÉªÌ¯ ËfaÉªÌ¯]) Phonetics Lab, Department of English Studies, University of Cyprus."
     },
     {
-        name: "Michail Bletsas",
-        photo: "biophotos/michael-bletsas2.jpg",
-        capacity: "Governor, National Cybersecurity Authority of Greece, Director of Computing, MIT Media Lab",
+        name: "Melinos Averkiou",
+        photo: "biophotos/melinos-averkiou.jpg",
+        capacity: "Associate Research Professor, CYENS Centre of  Excellence",
         role: "Panelist",
-        topic: "AI in Cybersecurity",
-        cv: "Michail Bletsas has served as Governor of the National Cybersecurity Authority since April 2024, actively contributing to the development of the national cybersecurity strategy. He is a Research Scientist and Director of Computing at the MIT Media Lab, where he has worked since 1996, overseeing the production, transmission, consumption, and storage of data. He was a core member of the technical and design team of the âOne Laptop per Childâ (OLPC) initiative, which created the pioneering and award-winning âXOâ laptop. He is frequently invited as a keynote speaker at international conferences and public forums.  His research interests include network security, countering the systematic spread of disinformation, wireless networks, and the development of high- performance computing infrastructures for machine learning. In recent years, he has been extensively engaged in consulting on technology and technology policy.  He holds a Diploma in Electrical Engineering from the Aristotle University of Thessaloniki and a masterâs degree in Computer Engineering from Boston University"
+        topic: "AI in Culture and Heritage",
+        cv: "Dr. Melinos Averkiou is an Associate Research Professor and Group Leader of the Visual Computing Group at CYENS Centre of Excellence in Cyprus. He received his PhD in Computer Science from University College London, and has held research positions at Stanford University, SIAT China, and the University of Cyprus. His research focuses on developing neural methods for understanding and generating visual content, with applications spanning computer vision, urban planning and remote sensing. He also manages Prometheus, CYENS' peta-scale AI supercomputer."
     },
     {
         name: "Panayiotis Charalambous",
@@ -84,7 +120,7 @@ window.speakers = [{
         capacity: "Professor Emeritus University of Cyprus and Cyprus Academy of Sciences, Letters, and Arts",
         role: "Session Chair",
         topic: "AI in Education: Policy and Practice",
-        cv: ""
+        cv: "Andreas Demetriou is Professor Emeritus of Psychology of the University of Cyprus and the University of Nicosia and a member of the Cyprus Academy of Sciences, Letters, and Arts, Academia Europea, the International Academy of Education, and the Association of Psychological Science. He is an Honorary Doctor of Middlesex University London and the University of Szeged, Hungary, and an Honorary Professor of Durham University, UK, and the Northeastern Normal University, China. He was the Minister of Education and Culture of Cyprus and founding President of the Cyprus University of Technology. He published more than 250 books and articles presenting his work on cognitive development and intelligence. Several journals (e.g., Developmental Review, Developmental Science, Intelligence, Human Development) devoted special issues to his theory."
     },
     {
         name: "Dimitrios Devetzis",
@@ -119,9 +155,9 @@ window.speakers = [{
         cv: "Constantine Dovrolis is Director of the Center for Computational Science and Technology (CaSToRC) at The Cyprus Institute. He is also a Professor of Computer Science at Georgia Tech, USA. His publications have received about 16,000 citations with an h-index of 57, and his research has been sponsored by US agencies such as NSF, NIH, DOE, DARPA, and by companies such as Google, Microsoft and Cisco. At The Cyprus Institute, he is leading a group of machine learning researchers working on European and national projects in the broader area of AI research and applications. Prof. Dovrolis is an ACM Distinguished Member and a member of the national Artificial Intelligence Taskforce of Cyprus."
     },
     {
-        name: "Achilles K. Emilianides",
+        name: "Achilles C. Emilianides",
         photo: "biophotos/achilles-emilianides.jpg",
-        capacity: "Professor of Law and Dean of the School of Law of the University of Nicosia",
+        capacity: "Professor of Law, Founding Member and President of the Cyprus Academy of Sciences, Letters, and Arts, and Dean of the School of Law of the University of Nicosia",
         role: "Session Chair",
         topic: "AI and Challenges to Democracy",
         cv: "Prof. Achilles C. Emilianides is a practicing advocate, Professor of Law and Dean of the School of Law of the University of Nicosia. He holds a PhD in Law from the Aristotle University of Thessaloniki. He is a Founding Member and President of the Cyprus Academy of Sciences, Letters, and Arts. He has also been elected as an ordinary member of the European Academy of Sciences and Arts, and is a member of ALLEA (All European Academies) representing the Cyprus Academy. He is also the President of the Royal Commonwealth Society Cyprus Branch and a member of numerous scientific societies. He has published more than 30 monographs and 100 scientific papers."
@@ -141,6 +177,14 @@ window.speakers = [{
         role: "Panelist",
         topic: "AI in Industry and Innovation",
         cv: "Ioannis Georgiou is a co-founder of Lendwise, a UK-based platform dedicated to making education finance more accessible. A CFA charterholder and former President of the CFA Society, he holds a BSc in Accounting and Finance and an MSc in Analysis, Design and Management of Information Systems from the London School of Economics (LSE). Yiannis likes to combine his financial expertise with technology-driven solutions to broaden access to higher education and financial products."
+    },
+    {
+        name: "Elena Hadjikakou",
+        photo: "biophotos/elena-hadjikakou.jpg",
+        capacity: "Director of the Pedagogical Institute of Cyprus",
+        role: "Panelist",
+        topic: "AI in Education: Policy and Practice",
+        cv: "Dr. Elena Hadjikakou is the Director of Cyprus Pedagogical Institute, Ministry of Education, Sport and Youth. She is a graduate of Cyprus Pedagogical Academy and the University of Cyprus. She completed her postgraduate studies (M.A.) and her doctoral studies (Ph.D) at the University of Reading, UK, in the area of Information and Communication Technologies in Education. She has worked as an in-service teacher trainer for many years at Cyprus Pedagogical Institute (C.P.I.), as permanent staff and as teacher on secondment. She has taught in many in-service training programmes for teachers, of all levels (pre-primary, primary and secondary education). She has been participating in various working groups and networks in Cyprus and abroad and her main interest is the effective teachers’ learning and the role of teacher in the learning process."
     },
     {
         name: "Sorin Hermon",
@@ -173,6 +217,14 @@ window.speakers = [{
         role: "Panelist",
         topic: "AI in Education: Policy and Practice",
         cv: "Dr. Panayiota (Pani) Kendeou is a Distinguished McKnight University Professor and Guy Bond Chair in Reading in the Department of Educational Psychology at the University of Minnesota. Dr. Kendeou directs the Reading + Learning Lab and co-directs the CEHD Learning Informatics Lab. In her research program, Dr. Kendeou develops theoretical models that explain how students learn during reading, and uses those models to design and test innovative, AI technologies that transform instruction and improve learning. The significance of her approach is in the development of theoretically oriented work and its translation into school-based practical applications. Dr. Kendeou has published extensively and her work has received numerous awards. She has also published a book on Misinformation and Fake News in Education and works on developing tools that teach news and digital literacy skills in young students. Dr. Kendeouâs work has been featured in national and local media, including The Guardian, Healthline, VICE, Voice of America, Morning Consult, Star Tribune, MplsStPaul Magazine, and KSTP Channel 5 News. Dr. Kendeou is currently the Editor of the Journal of Educational Psychology and serves on the editorial boards of Scientific Studies of Reading, Contemporary Educational Psychology, Learning and Instruction, Educational Psychologist, Educational Psychology Review, and Reading Research Quarterly. She is a fellow of the American Psychological Association (APA), the American Educational Research Association (AERA), and the Society for Text and Discourse (ST&D)."
+    },
+    {
+        name: "Artemis Kontou",
+        photo: "biophotos/artemis-kontou.jpg",
+        capacity: "Senior Research Associate, KIOS Center of Excellence",
+        role: "Panelist",
+        topic: "AI in Healthcare",
+        cv: "Artemis Kontou is a Senior Research Associate at KIOS CoE and an entrepreneur passionate about innovation management and growth. She co-founded Malloc, a privacy and data security startup with over 1 million downloads. She holds a PhD in Mechanical Engineering from Imperial College London and has held key roles, including Research Infrastructure Manager at KIOS CoE, Research Associate at Shell University Technology Centre, and Akzo Nobel. Artemis has participated in over 10 European projects focused on ICT, energy, and climate change. She has taught Project Management, Energy Law, and Applied Mathematics at various universities. Artemis holds two international patents, has published in peer-reviewed journals, and presented at international conferences. She is a National Delegate for ISO56001 Innovation Management standard, an Associate Fellow of the Higher Academy, and serves on the Board of the Nicosia Chamber of Commerce and Industry."
     },
     {
         name: "Nikolas Markou",
@@ -325,5 +377,14 @@ window.speakers = [{
         role: "Panelist",
         topic: "AI in Culture and Heritage",
         cv: "Dr. Marina Toumpouri is a Research Associate and leads the 3D/SwD Team at CYENS Centre of Excellence. Her work spans digitization, digital humanities, and cultural heritage management, with a focus on documentation, preservation, and knowledge transmission. She holds a PhD in Art History from the University of Lille and an MA in Musicology from the University of Strasbourg. Her research investigates the integrative application of Mixed and Extended Reality, 3D modelling, and interactive media for cultural heritage documentation, digital storytelling, and public engagement. She has extensive experience in the curation and digital transformation of heritage collections, combining conservation expertise with storytelling and interactive technologies to enhance public interpretation and access. Dr.Toumpouri has led and contributed to several national and EU-funded research projects dedicated to the sustainable valorisation of tangible and intangible cultural heritage. Her publications bridge traditional humanities and emerging technologies, adopting holistic perspectives on cultural materiality and exploring digital methodologies and tools for cultural analysis and preservation"
-    }
+    },
+    {
+        name: "Vassilios Tsakalos",
+        photo: "biophotos/vassilis-tsakalos.jpg",
+        capacity: "Director of Research, Cyprus Institute",
+        role: "Panelist",
+        topic: "Workshop: AI Services",
+        cv: "Vassilis Tsakalos has been the Director of Research and Technical Support at the Cyprus Institute since February 2020. Since December 2022, he has been the Coordinator of the European Digital Innovation Hub in Cyprus (DiGiNN). From January 2011 until his appointment at the Institute, he served as the Director General of the Cyprus Research and Innovation Foundation. Previously, he was for 12 years the Head of PRAXI Network, a Technology Transfer, Research, and Entrepreneurship Promotion Agency belonging to FORTH, Greece, operating under the auspices of the Hellenic Federation of Enterprises and the General Secretariat of Research and Technology."
+    },
+
 ];
