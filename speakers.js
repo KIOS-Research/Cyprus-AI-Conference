@@ -99,12 +99,12 @@ window.speakers = [{
         cv: "Prof. Yiorgos L. Chrysanthou is the General Director of the CYENS Centre of Excellence and a Professor at the Computer Science Department of the University of Cyprus. He has been involved in the setup of the Centre since the beginning and was the Research Director for the first four years.  He has published over 90 papers in journals and international conferences on computer graphics and virtual reality and is a co-author of the book âComputer Graphics and Virtual Environments: From Realism to Real-Timeâ, (Addison-Wesley 2001).  He served as the local or overall coordinator of over 25 research projects, related to his research interests, that lie in the general area of 3D Computer Graphics, recently focusing more on the development of algorithms for real-time AR and VR rendering, computer animation and crowd simulation.Over the years, Yiorgos has supported several start-up companies with his technical expertise."
     },
     {
-        name: "Costas Constantinou",
+        name: "Costas P. Constantinou",
         photo: "biophotos/",
         capacity: "Professor, University of Cyprus",
         role: "Panelist",
         topic: "AI in Education: Policy and Practice",
-        cv: ""
+        cv: "C. P. Constantinou is a Professor in Science Education and Director of the Learning in Science Group at the University of Cyprus. He has published extensively on science education with particular emphasis on inquiry-based learning, research-validation of teaching-learning innovations, assessment for learning and the development of transversal competencies such as modeling, investigation, argumentation and creativity. He has a PhD in Physics from the University of Cambridge and has worked at Washington State University and the University of Washington. He has been a member of the editorial boards of the International Journal of Science Education, the Educational Research Review and the journal Learning, Culture and Social Interaction. Dr. Constantinou has co-ordinated a number of projects funded by the European Commission and the Cyprus Research Promotion Foundation. He has participated in the High Level Expert Groups that authored the reports Science Education for Responsible Citizenship in 2015 and Europe needs more Scientists! in 2004. He has served as President of the European Science Education Research Association and as Chairperson of the Executive Committee of the European Association for Research on Learning and Instruction."
     },
     {
         name: "Andreas Demetriou",
