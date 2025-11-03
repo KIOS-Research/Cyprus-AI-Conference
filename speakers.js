@@ -100,7 +100,7 @@ window.speakers = [{
     },
     {
         name: "Costas P. Constantinou",
-        photo: "biophotos/",
+        photo: "biophotos/costas-constantinou.jpg",
         capacity: "Professor, University of Cyprus",
         role: "Panelist",
         topic: "AI in Education: Policy and Practice",
@@ -273,6 +273,14 @@ window.speakers = [{
         role: "Panelist",
         topic: "AI in Industry and Innovation",
         cv: "Andreas is a Manager in the Data and Artificial Intelligence Lab (DAIL) within the Technology Consulting Unit at PwC Cyprus. Andreas has over 10 years of professional experience in both academia and the private sector in the areas of Data Analytics, Business Intelligence, Machine Learning and Artificial Intelligence. Andreas holds a PhD in Astrophysics from the Institute of Cosmology and Gravitation (Portsmouth, UK), an MSc in Astronomy from the University of Sussex (UK) and a BSc in Physics from the National Kapodistrian University of Athens (Greece)."
+    },
+    {
+        name: "Antonis C. Kakas",
+        photo: "biophotos/antonis-kakas.jpg",
+        capacity: "Professor (Emeritus), University of Cyprus",
+        role: "Panelist",
+        topic: "Emerging Research in AI",
+        cv: "Antonis C. Kakas is a Professor (emeritus) at the Department of Computer Science of the University of Cyprus. He studied Mathematics at Imperial College, London and then obtained his Ph.D. in Theoretical Physics from the same college in 1984. His interest in Computing and AI started in 1989 under the group of Professor R.A. Kowalski. Since then, his research has concentrated on computational logic in AI with particular interest in argumentation, abduction and induction and their application to machine learning and cognitive systems. He has co-developed at the UCY several research AI systems, including the argumentation system of GORGIAS which has been applied to a wide range of problems in multi-agent systems and cognitive agents. With others he has proposed,Argumentation Logic, as a logic that offers a foundation for Human-centric and Explainable AI. With his students and collaborators, he is developing two new systems, LLM-COGNICA and ArgEML, to support the development of Cognitive Agentic AI and Explainable Machine Learning. He has recently co-founded a start-up company in Paris, called Argument Theory, which offers solutions to real-life application decision taking problems based on ΑΙ argumentation technology."
     },
     {
         name: "Maximos Kaliakatsos Papakostas",
