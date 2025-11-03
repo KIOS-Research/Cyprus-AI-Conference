@@ -125,10 +125,10 @@ window.speakers = [{
     {
         name: "Dimitrios Devetzis",
         photo: "biophotos/dimitrios-devetzis.jpg",
-        capacity: "Assist. Professor, University of Frederick",
+        capacity: "Assist. Professor, Frederick University",
         role: "Panelist",
         topic: "AI and Challenges to Democracy",
-        cv: "Dimitrios Devetzis is Assistant Professor at the Department of Law at Frederick University in Cyprus. He serves as Teaching Fellow at the Faculty of Law of Leibniz UniversitÃ¤t Hannover in Germany and is a Visiting Professor at the Orthodox University of the Congo, inKinshasa., Dem. Republic of Congo."
+        cv: "Dimitrios Devetzis is Assistant Professor at the Department of Law at Frederick University in Cyprus. He serves as Teaching Fellow at the Faculty of Law of Leibniz Universität Hannover in Germany and is a Visiting Professor at the Orthodox University of the Congo, inKinshasa., Dem. Republic of Congo."
     },
     {
         name: "Nicolas Dietis",
@@ -195,7 +195,7 @@ window.speakers = [{
         cv: "Dr. Sorin Hermon is Associate Professor in Digital Cultural Heritage at The Cyprus Institute. His research focuses on computer graphics and computer vision-based methods for the shape analysis of archaeological artefacts, heritage sites and artworks; hyper-spectral and technical imaging integration with 3D documentation; formal knowledge representation, domain ontologies, knowledge graphs and data repositories. He applies the above on addressing current grand challenges for the heritage of the region, namely the characterization of the conservation state, materiality, production techniques and manufacture technologies of heritage assets; sustainable risk management strategies for reducing the impact of Climate Change on CH; combatting the illicit trafficking of cultural goods and open-science workflows for the research-conservation-valorization of heritage. Sorin has published more than 120 peer-reviewed research papers, supervised several PhD and MSc students and is director of the MSc program in Digital Cultural Heritage at The Cyprus Institute. He is a member of the Steering Committee of ECHOES, the recently-EU funded project aimed at developing and implementing the European Collaborative Cloud for Cultural Heritage, being responsible, among others, to frame the concept of Heritage Digital Twins as digital commons and to ensure their digital continuum. He currently is the Principal Investigator on competitive EU grants summing up to ca. 2 million Euro for the next 5 years."
     },
     {
-        name: "Yannis Ioannides",
+        name: "Yannis Ioannidis",
         photo: "biophotos/yiannis-ioannides.jpg",
         capacity: "Professor, University of Athens",
         role: "Panelist",

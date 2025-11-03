@@ -31,10 +31,10 @@ window.programme = [{
         date: "7 November 2025",
         sessions: [
             { time: "08:30-09:00", title: "Registration" },
-            { time: "09:00-10:00", title: "<b>Keynote Talk: Dr Elena Xoplaki</b> <i>'AI and Climate'</i>" },
+            { time: "09:00-10:00", title: "<b>Keynote Talk: Dr Elena Xoplaki</b> <i>'AI in Climate'</i>" },
             { time: "10:00-11:30", title: "AI in Higher Education" },
             { time: "11:30-12:00", title: "Coffee Break" },
-            { time: "12:00-13:30", title: "AI in Education" },
+            { time: "12:00-13:30", title: "AI in Education: Policy and Practice" },
             { time: "13:30-14:30", title: "Networking Lunch" },
             { time: "14:30-16:00", title: "AI in Culture and Heritage" }
         ]
