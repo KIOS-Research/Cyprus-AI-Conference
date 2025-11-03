@@ -27,7 +27,7 @@ window.speakers = [{
     {
 
 
-        name: "Dr. Elena Xoplaki",
+        name: "Elena Xoplaki",
         photo: "biophotos/elena-xoplaki.jpg",
         capacity: "Assistant Professor, Justus-Liebig-University of Giessen",
         role: "Keynote Speaker",
@@ -195,13 +195,13 @@ window.speakers = [{
         cv: "Dr. Sorin Hermon is Associate Professor in Digital Cultural Heritage at The Cyprus Institute. His research focuses on computer graphics and computer vision-based methods for the shape analysis of archaeological artefacts, heritage sites and artworks; hyper-spectral and technical imaging integration with 3D documentation; formal knowledge representation, domain ontologies, knowledge graphs and data repositories. He applies the above on addressing current grand challenges for the heritage of the region, namely the characterization of the conservation state, materiality, production techniques and manufacture technologies of heritage assets; sustainable risk management strategies for reducing the impact of Climate Change on CH; combatting the illicit trafficking of cultural goods and open-science workflows for the research-conservation-valorization of heritage. Sorin has published more than 120 peer-reviewed research papers, supervised several PhD and MSc students and is director of the MSc program in Digital Cultural Heritage at The Cyprus Institute. He is a member of the Steering Committee of ECHOES, the recently-EU funded project aimed at developing and implementing the European Collaborative Cloud for Cultural Heritage, being responsible, among others, to frame the concept of Heritage Digital Twins as digital commons and to ensure their digital continuum. He currently is the Principal Investigator on competitive EU grants summing up to ca. 2 million Euro for the next 5 years."
     },
     {
-        name: "Yanni Ioannides",
+        name: "Yannis Ioannides",
         photo: "biophotos/yiannis-ioannides.jpg",
         capacity: "Professor, University of Athens",
         role: "Panelist",
         topic: "Emerging Research in AI",
         cv: "Yannis Ioannidis is a Professor at the Department of Informatics and Telecommunications of the University of Athens. He was also the President and General Director of Athena Research Center for 10 years. He holds a Diploma in Electrical Engineering from the National Technical University of Athens, an MSc in Applied Mathematics from Harvard University, and a Ph.D. degree in Computer Science from the University of California-Berkeley. His research interests include database and information systems, data infrastructures & digital repositories, scalable data processing, data science, data and text analytics, recommender systems and personalisation, and digital storytelling, topics on which he has published over 160 articles in leading journals and conferences."
-    },  
+    },
     {
         name: "Petros A. Ioannou",
         photo: "biophotos/petros-ioannou.jpg",
