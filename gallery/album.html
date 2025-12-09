@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Event Photo Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #fff8f7;
+      --bg-elevated: #f3f0fa;
+      --accent: #451dcc;
+      --accent-soft: rgba(69, 29, 204, 0.15);
+      --accent-coral: #ff928b;
+      --text-main: #120c0e;
+      --text-muted: #6b7280;
+      --border-subtle: #e5e7eb;
+      --radius-lg: 16px;
+      --radius-pill: 999px;
+      --shadow-soft: 0 18px 60px rgba(69, 29, 204, 0.12);
+      --transition-fast: 0.18s ease-out;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: linear-gradient(135deg, #fff8f7 0%, #f3f0fa 50%, #fff8f7 100%);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .app-shell {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 16px 16px 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 14px 18px;
+      border-radius: var(--radius-lg);
+      background: linear-gradient(
+        135deg,
+        rgba(69, 29, 204, 0.12),
+        rgba(255, 146, 139, 0.08)
+      );
+      border: 1px solid rgba(69, 29, 204, 0.2);
+      box-shadow: 0 10px 40px rgba(69, 29, 204, 0.1);
+    }
+
+    header .title-block {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.25rem;
+      letter-spacing: 0.03em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--accent);
+    }
+
+    header h1 span.logo-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 999px;
+      background: var(--accent-coral);
+      box-shadow: 0 0 12px rgba(255, 146, 139, 0.6);
+    }
+
+    header .subtitle {
+      margin: 0;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      opacity: 0.9;
+    }
+
+    .controls-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .pill-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--text-muted);
+      opacity: 0.8;
+    }
+
+    select {
+      background: rgba(255, 255, 255, 0.95);
+      color: var(--text-main);
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(69, 29, 204, 0.3);
+      padding: 7px 26px 7px 11px;
+      font-size: 0.85rem;
+      position: relative;
+      appearance: none;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .select-wrapper {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .select-wrapper::after {
+      content: "▾";
+      position: absolute;
+      right: 10px;
+      font-size: 0.7rem;
+      pointer-events: none;
+      color: var(--accent);
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: minmax(0, 1.5fr) minmax(0, 3fr);
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    @media (max-width: 840px) {
+      main {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .panel {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-soft);
+      padding: 14px 14px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      backdrop-filter: blur(18px);
+    }
+
+    .panel-title {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .panel-title span.badge {
+      padding: 2px 8px;
+      border-radius: var(--radius-pill);
+      font-size: 0.68rem;
+      border: 1px solid rgba(69, 29, 204, 0.3);
+      color: var(--accent);
+      background: rgba(69, 29, 204, 0.08);
+    }
+
+    .sessions-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .session-chip {
+      border-radius: var(--radius-pill);
+      padding: 5px 12px;
+      font-size: 0.8rem;
+      border: 1px solid rgba(69, 29, 204, 0.3);
+      background: rgba(255, 255, 255, 0.8);
+      color: var(--text-muted);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: background var(--transition-fast), color var(--transition-fast),
+        border-color var(--transition-fast), transform var(--transition-fast);
+      max-width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .session-chip span.dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: var(--accent);
+    }
+
+    .session-chip.active {
+      background: linear-gradient(
+        135deg,
+        rgba(255, 146, 139, 0.2),
+        rgba(69, 29, 204, 0.1)
+      );
+      color: var(--accent);
+      border-color: var(--accent-coral);
+      transform: translateY(-1px);
+      font-weight: 600;
+    }
+
+    .session-chip.active span.dot {
+      background: var(--accent-coral);
+      box-shadow: 0 0 8px rgba(255, 146, 139, 0.6);
+    }
+
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    .meta-pill {
+      padding: 3px 10px;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(69, 29, 204, 0.2);
+      background: rgba(69, 29, 204, 0.05);
+    }
+
+    /* Gallery grid */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      }
+    }
+
+    .thumb-card {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #fff;
+      border: 1px solid var(--border-subtle);
+      cursor: pointer;
+      isolation: isolate;
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast),
+        border-color var(--transition-fast);
+    }
+
+    .thumb-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(69, 29, 204, 0.1),
+        rgba(255, 146, 139, 0.15)
+      );
+      opacity: 0;
+      transition: opacity var(--transition-fast);
+      z-index: 1;
+    }
+
+    .thumb-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 40px rgba(69, 29, 204, 0.15);
+      border-color: var(--accent);
+    }
+
+    .thumb-card:hover::before {
+      opacity: 1;
+    }
+
+    .thumb-card img {
+      display: block;
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+      transition: transform 0.25s ease-out;
+    }
+
+    .thumb-card:hover img {
+      transform: scale(1.03);
+    }
+
+    .thumb-info {
+      position: absolute;
+      left: 8px;
+      right: 8px;
+      bottom: 8px;
+      z-index: 2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.7rem;
+      color: #fff;
+    }
+
+    .thumb-info span.index-pill {
+      background: rgba(18, 12, 14, 0.85);
+      padding: 2px 8px;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(255, 146, 139, 0.5);
+    }
+
+    .thumb-info span.session-short {
+      max-width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      opacity: 0.9;
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: 32px 12px 28px;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .empty-state strong {
+      color: var(--accent);
+    }
+
+    /* Lightbox */
+    .lightbox-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(18, 12, 14, 0.85);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+      padding: 16px;
+    }
+
+    .lightbox-backdrop.open {
+      display: flex;
+    }
+
+    .lightbox-inner {
+      max-width: 1100px;
+      width: 100%;
+      max-height: 100%;
+      display: grid;
+      grid-template-rows: auto minmax(0, 1fr) auto;
+      gap: 8px;
+    }
+
+    .lightbox-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      color: #fff;
+      font-size: 0.85rem;
+    }
+
+    .lightbox-title {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .lightbox-title strong {
+      font-size: 0.9rem;
+    }
+
+    .lightbox-title span {
+      font-size: 0.75rem;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .lightbox-counter {
+      font-size: 0.75rem;
+      padding: 3px 10px;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(255, 146, 139, 0.5);
+      background: rgba(18, 12, 14, 0.9);
+    }
+
+    .lightbox-main {
+      position: relative;
+      border-radius: 18px;
+      overflow: hidden;
+      background: #fff;
+      border: 1px solid rgba(69, 29, 204, 0.2);
+      box-shadow: var(--shadow-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    .lightbox-main img {
+      max-width: 100%;
+      max-height: 70vh;
+      object-fit: contain;
+      display: block;
+    }
+
+    .lightbox-nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      border-radius: 999px;
+      border: 1px solid rgba(69, 29, 204, 0.4);
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(10px);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: var(--accent);
+      font-size: 1.1rem;
+      transition: background var(--transition-fast), transform var(--transition-fast),
+        border-color var(--transition-fast), box-shadow var(--transition-fast);
+    }
+
+    .lightbox-nav-btn:hover {
+      background: var(--accent);
+      color: #fff;
+      transform: translateY(-50%) translateY(-1px);
+      border-color: var(--accent);
+      box-shadow: 0 10px 40px rgba(69, 29, 204, 0.3);
+    }
+
+    .lightbox-nav-btn.left {
+      left: 10px;
+    }
+
+    .lightbox-nav-btn.right {
+      right: 10px;
+    }
+
+    .lightbox-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.75rem;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .lightbox-bottom button {
+      border-radius: var(--radius-pill);
+      padding: 6px 12px;
+      font-size: 0.78rem;
+      border: 1px solid rgba(255, 146, 139, 0.5);
+      background: rgba(18, 12, 14, 0.9);
+      color: #fff;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: background var(--transition-fast), box-shadow var(--transition-fast),
+        border-color var(--transition-fast), transform var(--transition-fast);
+    }
+
+    .lightbox-bottom button:hover {
+      background: var(--accent-coral);
+      border-color: var(--accent-coral);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 26px rgba(255, 146, 139, 0.4);
+    }
+
+    footer {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 16px 18px;
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      text-align: right;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: var(--accent-coral);
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="app-shell">
+    <header>
+      <div class="title-block">
+        <h1>
+          <span class="logo-dot"></span>
+          Cyprus AI Conference 2025 Photo Gallery
+        </h1>
+        <p class="subtitle">
+          Browse by day, then jump into each session. Click any thumbnail to enter
+          a full-screen viewer.
+        </p>
+      </div>
+      <div class="controls-row">
+        <span class="pill-label">Day</span>
+        <div class="select-wrapper">
+          <select id="daySelect"></select>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="panel" aria-label="Sessions">
+        <div class="panel-title">
+          <span>Sessions</span>
+          <span class="badge" id="sessionCountBadge">0 sessions</span>
+        </div>
+        <div class="sessions-list" id="sessionsList"></div>
+        <div class="meta-row">
+          <span class="meta-pill" id="sessionMetaDay"></span>
+          <span class="meta-pill" id="sessionMetaName"></span>
+        </div>
+      </section>
+
+      <section class="panel" aria-label="Photos">
+        <div class="panel-title">
+          <span>Photos</span>
+          <span class="badge" id="photoCountBadge">0 photos</span>
+        </div>
+        <div id="galleryGrid" class="gallery-grid"></div>
+        <div id="emptyState" class="empty-state" style="display:none;">
+          <strong>No photos to show yet.</strong><br />
+          Select a day and a session from the left to load the gallery.
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox-backdrop" id="lightboxBackdrop" aria-hidden="true">
+    <div class="lightbox-inner">
+      <div class="lightbox-top">
+        <div class="lightbox-title">
+          <strong id="lightboxSessionTitle"></strong>
+          <span id="lightboxDayTitle"></span>
+        </div>
+        <div class="lightbox-counter" id="lightboxCounter"></div>
+      </div>
+      <div class="lightbox-main">
+        <button class="lightbox-nav-btn left" id="prevBtn" aria-label="Previous photo">‹</button>
+        <img id="lightboxImage" alt="Session photo" />
+        <button class="lightbox-nav-btn right" id="nextBtn" aria-label="Next photo">›</button>
+      </div>
+      <div class="lightbox-bottom">
+        <span>Tip: Use ← → arrows or Esc to navigate.</span>
+        <button id="closeBtn" type="button">✕ Close viewer</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Cyprus Academy of Sciences, Letters and Arts, and KIOS Research and Innovation Center of Excellence. All rights reserved.
+  </footer>
+
+  <script>
+    // ==== DATA MODEL BASED ON YOUR FOLDERS ====
+    // Each "session" knows its folder path, file prefix and number of photos.
+    // Filenames follow: `${prefix}${NNN}.jpg` (NNN = 001, 002, ...)
+
+    const galleryData = [
+      {
+        dayLabel: "1st day - 5 November 2025",
+        sessions: [
+          {
+            name: "AI and Cybersecurity",
+            path: "1st day - 5 November 2025/AI and Cybersecurity",
+            prefix: "1st day - 5 November 2025-AI and Cybersecurity_",
+            count: 19
+          },
+          {
+            name: "AI in Healthcare",
+            path: "1st day - 5 November 2025/AI in Healthcare",
+            prefix: "1st day - 5 November 2025-AI in Healthcare_",
+            count: 35
+          },
+          {
+            name: "Emerging Research in AI",
+            path: "1st day - 5 November 2025/Emerging Research in AI",
+            prefix: "1st day - 5 November 2025-Emerging Research in AI_",
+            count: 18
+          },
+          {
+            name: "Keynote Talk_ Michail Bletsas ",
+            path: "1st day - 5 November 2025/Keynote Talk_ Michail Bletsas ",
+            prefix: "1st day - 5 November 2025-Keynote Talk_ Michail Bletsas _",
+            count: 4
+          },
+          {
+            name: "Opening Remarks",
+            path: "1st day - 5 November 2025/Opening Remarks",
+            prefix: "1st day - 5 November 2025-Opening Remarks_",
+            count: 13
+          }
+        ]
+      },
+      {
+        dayLabel: "2nd day - 6 November 2025",
+        sessions: [
+          {
+            name: "AI in Industry and Innovation",
+            path: "2nd day - 6 November 2025/AI in Industry and Innovation",
+            prefix: "2nd day - 6 November 2025-AI in Industry and Innovation_",
+            count: 14
+          },
+          {
+            name: "Critical Infrastructures",
+            path: "2nd day - 6 November 2025/Critical Infrastructures",
+            prefix: "2nd day - 6 November 2025-Critical Infrastructures_",
+            count: 14
+          },
+          {
+            name: "Democracy",
+            path: "2nd day - 6 November 2025/Democracy",
+            prefix: "2nd day - 6 November 2025-Democracy_",
+            count: 15
+          },
+          {
+            name: "Keynote Talk_ Demetris Skourides ",
+            path: "2nd day - 6 November 2025/Keynote Talk_ Demetris Skourides ",
+            prefix: "2nd day - 6 November 2025-Keynote Talk_ Demetris Skourides _",
+            count: 5
+          },
+          {
+            name: "Workshop_ AI Services",
+            path: "2nd day - 6 November 2025/Workshop_ AI Services",
+            prefix: "2nd day - 6 November 2025-Workshop_ AI Services_",
+            count: 2
+          }
+        ]
+      },
+      {
+        dayLabel: "3rd day - 7 November 2025",
+        sessions: [
+          {
+            name: "AI in Culture and Heritage",
+            path: "3rd day - 7 November 2025/AI in Culture and Heritage",
+            prefix: "3rd day - 7 November 2025-AI in Culture and Heritage_",
+            count: 12
+          },
+          {
+            name: "AI in Education_ Policy and Practice",
+            path: "3rd day - 7 November 2025/AI in Education_ Policy and Practice",
+            prefix: "3rd day - 7 November 2025-AI in Education_ Policy and Practice_",
+            count: 10
+          },
+          {
+            name: "AI in Higher Education",
+            path: "3rd day - 7 November 2025/AI in Higher Education",
+            prefix: "3rd day - 7 November 2025-AI in Higher Education_",
+            count: 16
+          },
+          {
+            name: "Keynote Talk_ Dr Elena Xoplaki ",
+            path: "3rd day - 7 November 2025/Keynote Talk_ Dr Elena Xoplaki ",
+            prefix: "3rd day - 7 November 2025-Keynote Talk_ Dr Elena Xoplaki _",
+            count: 4
+          }
+        ]
+      }
+    ];
+
+    // ==== STATE ====
+    let currentDayIndex = 0;
+    let currentSessionIndex = 0;
+    let currentImages = []; // list of {src, index, sessionName, dayLabel}
+    let lightboxIndex = 0;
+
+    // ==== HELPERS ====
+    function pad3(num) {
+      return String(num).padStart(3, "0");
+    }
+
+    function buildImageList(session, dayLabel) {
+      const list = [];
+      for (let i = 1; i <= session.count; i++) {
+        const filename = `${session.prefix}${pad3(i)}.jpg`;
+        const src = `${session.path}/${filename}`;
+        list.push({
+          src,
+          index: i,
+          sessionName: session.name,
+          dayLabel
+        });
+      }
+      return list;
+    }
+
+    // ==== DOM HOOKS ====
+    const daySelect = document.getElementById("daySelect");
+    const sessionsList = document.getElementById("sessionsList");
+    const sessionCountBadge = document.getElementById("sessionCountBadge");
+    const photoCountBadge = document.getElementById("photoCountBadge");
+    const galleryGrid = document.getElementById("galleryGrid");
+    const emptyState = document.getElementById("emptyState");
+    const sessionMetaDay = document.getElementById("sessionMetaDay");
+    const sessionMetaName = document.getElementById("sessionMetaName");
+
+    const lightboxBackdrop = document.getElementById("lightboxBackdrop");
+    const lightboxImage = document.getElementById("lightboxImage");
+    const lightboxSessionTitle = document.getElementById("lightboxSessionTitle");
+    const lightboxDayTitle = document.getElementById("lightboxDayTitle");
+    const lightboxCounter = document.getElementById("lightboxCounter");
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+    const closeBtn = document.getElementById("closeBtn");
+
+    // ==== RENDER FUNCTIONS ====
+    function renderDaySelect() {
+      daySelect.innerHTML = "";
+      galleryData.forEach((day, idx) => {
+        const opt = document.createElement("option");
+        opt.value = String(idx);
+        opt.textContent = day.dayLabel;
+        daySelect.appendChild(opt);
+      });
+      daySelect.value = String(currentDayIndex);
+    }
+
+    function renderSessions() {
+      const day = galleryData[currentDayIndex];
+      const sessions = day.sessions;
+      sessionsList.innerHTML = "";
+      sessionCountBadge.textContent =
+        sessions.length === 1 ? "1 session" : `${sessions.length} sessions`;
+
+      sessions.forEach((session, idx) => {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className =
+          "session-chip" + (idx === currentSessionIndex ? " active" : "");
+        btn.dataset.index = String(idx);
+        const dot = document.createElement("span");
+        dot.className = "dot";
+        const text = document.createElement("span");
+        text.className = "session-label";
+        text.textContent = session.name;
+        btn.appendChild(dot);
+        btn.appendChild(text);
+        sessionsList.appendChild(btn);
+      });
+
+      if (sessions.length > 0) {
+        sessionMetaDay.textContent = day.dayLabel;
+        sessionMetaName.textContent = sessions[currentSessionIndex].name;
+      } else {
+        sessionMetaDay.textContent = "";
+        sessionMetaName.textContent = "";
+      }
+    }
+
+    function renderGallery() {
+      const day = galleryData[currentDayIndex];
+      const sessions = day.sessions;
+      if (!sessions.length) {
+        galleryGrid.innerHTML = "";
+        photoCountBadge.textContent = "0 photos";
+        emptyState.style.display = "block";
+        return;
+      }
+
+      const session = sessions[currentSessionIndex];
+      currentImages = buildImageList(session, day.dayLabel);
+
+      galleryGrid.innerHTML = "";
+      if (!currentImages.length) {
+        photoCountBadge.textContent = "0 photos";
+        emptyState.style.display = "block";
+        return;
+      }
+
+      photoCountBadge.textContent =
+        currentImages.length === 1
+          ? "1 photo"
+          : `${currentImages.length} photos`;
+      emptyState.style.display = "none";
+
+      currentImages.forEach((imgInfo, idx) => {
+        const card = document.createElement("div");
+        card.className = "thumb-card";
+        card.dataset.index = String(idx);
+
+        const img = document.createElement("img");
+        img.src = imgInfo.src;
+        img.alt = `${imgInfo.sessionName} – photo ${imgInfo.index}`;
+
+        const info = document.createElement("div");
+        info.className = "thumb-info";
+
+        const pill = document.createElement("span");
+        pill.className = "index-pill";
+        pill.textContent = `#${imgInfo.index}`;
+
+        const label = document.createElement("span");
+        label.className = "session-short";
+        label.textContent = session.name;
+
+        info.appendChild(pill);
+        info.appendChild(label);
+
+        card.appendChild(img);
+        card.appendChild(info);
+        galleryGrid.appendChild(card);
+      });
+    }
+
+    // ==== LIGHTBOX ====
+    function openLightbox(idx) {
+      if (!currentImages.length) return;
+      lightboxIndex = idx;
+      const imgInfo = currentImages[lightboxIndex];
+      lightboxImage.src = imgInfo.src;
+      lightboxSessionTitle.textContent = imgInfo.sessionName;
+      lightboxDayTitle.textContent = imgInfo.dayLabel;
+      lightboxCounter.textContent = `Photo ${imgInfo.index} of ${currentImages.length}`;
+      lightboxBackdrop.classList.add("open");
+      lightboxBackdrop.setAttribute("aria-hidden", "false");
+    }
+
+    function closeLightbox() {
+      lightboxBackdrop.classList.remove("open");
+      lightboxBackdrop.setAttribute("aria-hidden", "true");
+      lightboxImage.src = "";
+    }
+
+    function showNext(delta) {
+      if (!currentImages.length) return;
+      lightboxIndex = (lightboxIndex + delta + currentImages.length) % currentImages.length;
+      const imgInfo = currentImages[lightboxIndex];
+      lightboxImage.src = imgInfo.src;
+      lightboxCounter.textContent = `Photo ${imgInfo.index} of ${currentImages.length}`;
+    }
+
+    // ==== EVENT WIRING ====
+    daySelect.addEventListener("change", (e) => {
+      currentDayIndex = Number(e.target.value);
+      currentSessionIndex = 0;
+      renderSessions();
+      renderGallery();
+    });
+
+    sessionsList.addEventListener("click", (e) => {
+      const btn = e.target.closest(".session-chip");
+      if (!btn) return;
+      const idx = Number(btn.dataset.index);
+      if (idx === currentSessionIndex) return;
+      currentSessionIndex = idx;
+      renderSessions();
+      renderGallery();
+    });
+
+    galleryGrid.addEventListener("click", (e) => {
+      const card = e.target.closest(".thumb-card");
+      if (!card) return;
+      const idx = Number(card.dataset.index);
+      openLightbox(idx);
+    });
+
+    prevBtn.addEventListener("click", () => showNext(-1));
+    nextBtn.addEventListener("click", () => showNext(1));
+    closeBtn.addEventListener("click", () => closeLightbox());
+
+    lightboxBackdrop.addEventListener("click", (e) => {
+      if (e.target === lightboxBackdrop) {
+        closeLightbox();
+      }
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (!lightboxBackdrop.classList.contains("open")) return;
+      if (e.key === "Escape") {
+        closeLightbox();
+      } else if (e.key === "ArrowRight") {
+        showNext(1);
+      } else if (e.key === "ArrowLeft") {
+        showNext(-1);
+      }
+    });
+
+    // ==== INIT ====
+    renderDaySelect();
+    renderSessions();
+    renderGallery();
+  </script>
+</body>
+</html>
