@@ -225,7 +225,7 @@ window.addEventListener('resize', function() {
         if (!grid) return;
         grid.innerHTML = '';
         if (!speakers || speakers.length === 0) {
-            grid.innerHTML = '<p>Speakers to be announced.</p>';
+            grid.innerHTML = '<p>No speaker data found.</p>';
             return;
         }
         speakers.forEach((spk, idx) => {
