@@ -17,3 +17,11 @@ which stays live at `cyprusai.cy/<YEAR>/`. When rolling over to a new year:
    to `/`.
 
 `CNAME` and `README.md` stay at the repo root and are not year-specific.
+
+## Cache-busting
+
+`index.html` loads `styles.css`, `speakers.js`, `programme.js`, and `script.js`
+with a `?v=N` query string. Bump that number whenever you edit one of those
+files so browsers/CDN don't keep serving a stale cached copy after a content
+update (e.g. adding speakers or a new programme). Root and `/<YEAR>/` archives
+version independently.
